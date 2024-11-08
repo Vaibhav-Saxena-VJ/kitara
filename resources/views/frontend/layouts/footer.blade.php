@@ -1,89 +1,120 @@
 <!-- Footer Start -->
-<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
-            <div class="container py-5">
-                <div class="row g-4 footer-inner">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-white fw-bold mb-4">About PestKit.</h4>
-                            <p>Nostrud exertation ullamco labor nisi aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                            <p class="mb-0"><a class="" href="#">PestKit </a> &copy; 2023 All Right Reserved.</p>
-                        </div>
+<footer class="footer-section pt-120">
+    <div class="footer-element-one">
+        <img src="{{ asset('theme') }}/assets/images/element/element-48.png" alt="element">
+    </div>
+    <div class="footer-element-two">
+        <img src="{{ asset('theme') }}/assets/images/element/element-39.png" alt="element">
+    </div>
+    <div class="footer-element-three">
+        <img src="{{ asset('theme') }}/assets/images/element/element-40.png" alt="element">
+    </div>
+    <div class="footer-element-four">
+        <img src="{{ asset('theme') }}/assets/images/element/element-7.png" alt="element">
+    </div>
+    <div class="footer-element-five">
+        <img src="{{ asset('theme') }}/assets/images/element/element-41.png" alt="element">
+    </div>
+    <div class="footer-element-six">
+        <img src="{{ asset('theme') }}/assets/images/element/element-42.png" alt="element">
+    </div>
+    <div class="footer-element-seven">
+        <img src="{{ asset('theme') }}/assets/images/element/element-39.png" alt="element">
+    </div>
+    <div class="container">
+        <div class="row mb-30-none">
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <a class="site-logo site-title" href="index.html"><img src="{{ asset('theme') }}/assets/images/logo-two.png" alt="site-logo"></a>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-white fw-bold mb-4">Usefull Link</h4>
-                            <div class="d-flex flex-column align-items-start">
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>About Us</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Contact Us</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Our Services</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Terms & Condition</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-white fw-bold mb-4">Services Link</h4>
-                            <div class="d-flex flex-column align-items-start">
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Apartment Cleaning</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Office Cleaning</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Car Washing</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Green Cleaning</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-white fw-bold mb-4">Contact Us</h4>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>123 Street, CA, USA</a>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</a>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>info@example.com</a>
-                        </div>
+                    <p>Kitaracloud was founded with the vision of helping business grow using Salesforce®. You can rely on us in any technical challenge & difficult situation. We are always available to help you out.</p>
+                    <ul class="footer-social">
+                        <li><a href="https://www.facebook.com/profile.php?id=100076460610424"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/kitaracloud"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kitaracloud-techlabs-7762aa229/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/kitaracloud/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+                <div class="footer-widget">
+                    <h5 class="title">Quick Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="#0"><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href="#0"><i class="fas fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#0"><i class="fas fa-angle-right"></i> Services</a></li>
+                        <li><a href="#0"><i class="fas fa-angle-right"></i> Blogs</a></li>
+                        <li><a href="#0"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                    <h4 class="title">Our Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Salesforce consulting</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Salesforce Implementation</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Community Cloud Implementation</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Salesforce Field Service Lightning Implementation</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Salesforce Integration</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Salesforce Lightning Migration</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Data Migration</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div class="footer-widget">
+                    <h5 class="title">Reach Us</h5>
+                    <ul class="footer-list">
+                        <li><a><i class="fas fa-angle-right"></i> 310, Arth Business Center (ABC), Nikol Ring Road, Nikol, Ahmedabad, Gujarat 382350.</a></li>
+                        <li><a href="mailto:info@kitaracloud.com"><i class="fas fa-angle-right"></i> info@kitaracloud.com</a></li>
+                        <li><a href="tel:919033648701"><i class="fas fa-angle-right"></i> +91 90336-48701</a></li>
+                    </ul>
+                    <form class="footer-subscribe-form three mt-3">
+                        <input type="email" class="form--control" placeholder="Enter your mail..." autocomplete="off">
+                        <button type="submit">Subscribe Now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrapper">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 text-center">
+                    <div class="copyright-area">
+                        <p>Copyright © 2024 Kitaracloud Techlabs. All Rights Reserved. Developed by <a href="https://jfstechnologies.com/"><u>JFS Technologies</u></a>.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+</footer>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
-
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright bg-dark py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        <a href="#" class="text-primary mb-0 display-6">Pest<span class="text-white">Kit</span><i class="fa fa-spider text-primary ms-2"></i></a>
-                    </div>
-                    <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-md-4 my-auto text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-        
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="{{ asset('theme') }}/lib/wow/wow.min.js"></script>
-        <script src="{{ asset('theme') }}/lib/easing/easing.min.js"></script>
-        <script src="{{ asset('theme') }}/lib/waypoints/waypoints.min.js"></script>
-        <script src="{{ asset('theme') }}/lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="{{ asset('theme') }}/js/main.js"></script>
+<!-- jquery -->
+<script src="{{ asset('theme') }}/assets/js/jquery-3.6.0.min.js"></script>
+<!-- bootstrap js -->
+<script src="{{ asset('theme') }}/assets/js/bootstrap.min.js"></script>
+<!-- swipper js -->
+<script src="{{ asset('theme') }}/assets/js/swiper.min.js"></script>
+<!-- lightcase js-->
+<script src="{{ asset('theme') }}/assets/js/lightcase.js"></script>
+<!-- odometer js -->
+<script src="{{ asset('theme') }}/assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="{{ asset('theme') }}/assets/js/viewport.jquery.js"></script>
+<!-- aos js file -->
+<script src="{{ asset('theme') }}/assets/js/aos.js"></script>
+<!-- nice select js -->
+<script src="{{ asset('theme') }}/assets/js/jquery.nice-select.js"></script>
+<!-- isotope js -->
+<script src="{{ asset('theme') }}/assets/js/isotope.pkgd.min.js"></script>
+<!-- tweenMax js -->
+<script src="{{ asset('theme') }}/assets/js/TweenMax.min.js"></script>
+<!-- main -->
+<script src="{{ asset('theme') }}/assets/js/main.js"></script>
