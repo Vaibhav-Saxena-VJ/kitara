@@ -39,15 +39,15 @@
             <div class="col-xl-12 mb-30">
                 <div class="banner-content two">
                    <div class="banner-content-header" data-aos="fade-up" data-aos-duration="1200">
-                        <h1 class="title">Soft i'm Developers</h1>
-                        <h1 class="title">Impressive Experience</h1>
+                        <h1 class="title">Kitaracloud Techlabs</h1>
+                        <h1 class="title">Salesforce Consulting Company</h1>
                    </div>
                     <div class="banner-area">
                         <div class="banner-text">
                             <span>TECH</span>
                         </div>
                         <div class="banner-left-content">
-                            <div class="banner-left-video">
+                            <!-- <div class="banner-left-video">
                                 <div class="circle">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
                                         <defs>
@@ -61,7 +61,7 @@
                                             </text>
                                         </g>
                                     </svg>
-                                </div>
+                                </div> 
                                 <div class="video-main">
                                     <div class="promo-video">
                                         <div class="waves-block">
@@ -74,18 +74,18 @@
                                         <i class="fas fa-play"></i>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="banner-left-arrow">
+                            </div> -->
+                            <!-- <div class="banner-left-arrow">
                                 <img src="{{ asset('theme') }}/assets/images/element/element-1.png" alt="element">
                             </div>
                             <div class="banner-left-intro">
                                 <span>Play Intro</span>
-                            </div>
+                            </div> -->
                             <div class="banner-left-footer">
-                                <h3 class="title">Best It Solution Provider</h3>
-                                <p>Personalization assumed up an excess of position in the showcasing space and has made each and every one of your messages exhausting and without feelings.</p>
+                                <h3 class="title">Salesforce Technology Solutions Provider at Its Best</h3>
+                                <p>We are certified, experienced, innovative and qualified professionals with focus to provide outstanding services to individuals, small and medium sized companies and corporate clients. we ensure 100% customer satisfaction by providing best, innovative, robust and scalable solutions within your deadline and budget. We are always reliable and help out our clients on time.</p>
                                 <div class="banner-left-btn">
-                                    <a href="contact.html" class="btn--base active">Contact Us</a>
+                                    <a href="{{ url('/about-us') }}" class="btn--base active">About Us</a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                     <h2 class="title">We are progressive IT service company</h2>
                     <p>Our motto includes the core values of the company and describes our philosophy. We moved heaven and earth to make the company’s motto applicable to every member of the team.</p>
                     <div class="statistics-left-btn">
-                        <a href="about.html" class="custom-btn">Know More</a>
+                        <a href="{{ url('/about-us') }}" class="custom-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -180,10 +180,10 @@
             </div>
             <div class="col-xl-6 col-lg-6 mb-30">
                 <div class="overview-content">
-                    <h2 class="title">We specialize in the web development</h2>
-                    <p>Our motto includes the core values of the company and describes our philosophy. We moved heaven and earth to make the company’s motto applicable to every member of the team.</p>
+                    <h2 class="title">Salesforce Solutions Are Our Specialty.</h2>
+                    <p>Kitaracloud helping clients to setup, configure & solve their business problems with Salesforce CRM. We are always responsive & reliable, this is our keys to Success, we promise & deliver excellent work.</p>
                     <div class="overview-btn">
-                        <a href="service.html" class="btn--base active">View All Services</a>
+                        <a href="{{ url('/services') }}" class="btn--base active">View All Services</a>
                     </div>
                 </div>
             </div>
@@ -206,10 +206,10 @@
                         <img src="{{ asset('theme') }}/assets/images/icon/icon-3.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title">IT Management</h3>
-                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <h3 class="title">Community Cloud Implementation</h3>
+                        <p>A Salesforce Community Cloud is a platform to Collaborate with your Partners, Customers and Employees.</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                            <a href="#" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -220,10 +220,10 @@
                         <img src="{{ asset('theme') }}/assets/images/icon/icon-4.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title">Data Security</h3>
-                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <h3 class="title">Salesforce Implementation</h3>
+                        <p>Our Salesforce architect understand your business functionality, pain points and help you how to handle them.</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                            <a href="#" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -234,10 +234,10 @@
                         <img src="{{ asset('theme') }}/assets/images/icon/icon-5.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title">Business Consulting</h3>
-                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <h3 class="title">Salesforce Lightning Migration</h3>
+                        <p>Salesforce users who do not migrate to Lightning will have to pay additional costs for these updates & new services.</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                            <a href="#" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -248,10 +248,10 @@
                         <img src="{{ asset('theme') }}/assets/images/icon/icon-6.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title">QA & Testing</h3>
-                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <h3 class="title">Salesforce Data Migration</h3>
+                        <p>It is a complicated & time-consuming task which involves data export, data mapping & data cleansing.</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                            <a href="#" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -263,6 +263,65 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="project-section">
+    <div class="project-element-five">
+        <img src="{{ asset('theme') }}/assets/images/element/element-91.png" alt="element">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-10 text-center">
+                <div class="section-header">
+                    <span class="sub-title">WHY CHOOSE US</span>
+                    <h1 class="section-title">Experience your product as
+                        you create it.</h1>
+                    <p>Softim keeps your team’s work on-brand, on message, and on time. Innovative features make</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-wrapper-area mt-30">
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div class="service-item two five">
+                        <div class="service-icon">
+                            <img src="{{ asset('theme') }}/assets/images/icon/icon-40.png" alt="icon">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="title">Easy setup process</h3>
+                            <p>We rank among the best in Argentina, 
+                                and Ukraine Our apps get</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div class="service-item two five">
+                        <div class="service-icon">
+                            <img src="{{ asset('theme') }}/assets/images/icon/icon-41.png" alt="icon">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="title">Fast & secure</h3>
+                            <p>We rank among the best in Argentina, 
+                                and Ukraine Our apps get</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div class="service-item two five">
+                        <div class="service-icon">
+                            <img src="{{ asset('theme') }}/assets/images/icon/icon-42.png" alt="icon">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="title">24/7 Customer support</h3>
+                            <p>We rank among the best in Argentina, 
+                                and Ukraine Our apps get</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="project-section two">
     <div class="project-element-one two">
         <img src="{{ asset('theme') }}/assets/images/element/element-60.png" alt="element">
