@@ -8,21 +8,9 @@
 <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="breatcome_title">
-          <div class="breatcome_title_inner pb-2">
-            <h2>Salesforce Field Service Lightning Implementation</h2>
-          </div>
-          <div class="breatcome_content">
-            <ul>
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-                <i class="fa fa-angle-right"></i> <a href="{{ url('/services') }}"> Services</a>
-                <i class="fa fa-angle-right"></i>
-                <span>Salesforce FSL Implementation</span>
-              </li>
-            </ul>
-          </div>
+      <div class="col-lg-6 p-0">
+        <div class="breatcome_title_inner pb-2">
+          <h2>Salesforce Field Service Lightning (FSL) Implementation</h2>
         </div>
       </div>
     </div>
@@ -172,7 +160,7 @@
       <div class="col-lg-12">
         <div class="call-do-action-content">
           <div class="call-do-action-title text_center wow fadeInDown" data-wow-delay=".4">
-            <h2>Have a project in mind?<br>Let's get to work</h2>
+            <h2>Looking for an experienced <br>Salesforce team?</h2>
           </div>
           <div class="call-button text_center wow fadeInUp" data-wow-delay=".5">
             <a href="#">Let's Connect <i class="bi bi-arrow-right"></i></a>

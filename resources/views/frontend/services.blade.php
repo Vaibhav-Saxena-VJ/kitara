@@ -8,20 +8,9 @@
 <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="breatcome_title">
-          <div class="breatcome_title_inner pb-2">
-            <h2>Our Service</h2>
-          </div>
-          <div class="breatcome_content">
-            <ul>
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-                <i class="fa fa-angle-right"></i>
-                <span>Our Services</span>
-              </li>
-            </ul>
-          </div>
+      <div class="col-lg-6 p-0">
+        <div class="breatcome_title_inner pb-2">
+          <h2>Our Service</h2>
         </div>
       </div>
     </div>
@@ -29,8 +18,18 @@
 </div>
 <!-- End Techno Breatcome Area -->
 
+<div class="about_area pb-50">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="{{ asset('theme') }}/assets/images/project-plan.png" class="w-100" alt="Salesforce Project Plan" />
+      </div>
+    </div>
+  </div>
+</div>
+
 <!----- Start Techno About Area ----->
-<div class="about_area pt-85 pb-70">
+<div class="about_area pb-70">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
@@ -44,7 +43,7 @@
             <h6>5 YEARS OF EXPERIENCE</h6>
           </div>
           <div class="section_main_title">
-            <h1>We Provide Best <span>Cloud Solutions</span> For Your Success</h1>
+            <h1>We Provide Best <span>Cloud Services</span> For Your Success</h1>
           </div>
           <div class="em_bar">
             <div class="em_bar_bg"></div>
@@ -69,7 +68,7 @@
             <h6>Services</h6>
           </div>
           <div class="section_main_title">
-            <h2>Our Best Cloud Solutions</h2>
+            <h2>Our Best Cloud Services</h2>
           </div>
           <div class="em_bar">
             <div class="em_bar_bg"></div>
@@ -81,20 +80,64 @@
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="service_style_seven pt-3 pb-3 pl-4 pr-3 mb-30">
           <div class="service_style_seven_icon">
-            <img src="{{ asset('theme') }}/assets/images/consulting.png" alt="Salesforce Consulting" />
+            <img src="{{ asset('theme') }}/assets/images/data.png" alt="Salesforce Development" />
           </div>
           <div class="service_style_seven_content">
             <div class="service_style_seven_title pb-3">
               <a href="{{ url('/consulting-services') }}">
-                <h4>Salesforce consulting</h4>
+                <h4>Salesforce Development</h4>
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>We Provide Salesforce CRM Consulting Services to support your sales, marketing and customer service needs. In case you decide to implement Salesforce CRM, migrate from another CRM to Salesforce, optimize existing Salesforce solution, add automation for Sales, Service and marketing department, we provide outstanding, best and cost-effective Salesforce consulting services.</p>
+              <p>We Provide Salesforce CRM Development Services to support your sales, marketing and customer service needs. In case you decide to implement Salesforce CRM, migrate from another CRM to Salesforce, optimize existing Salesforce solution, add automation for Sales, Service and marketing department, we provide outstanding, best and cost-effective Salesforce consulting services.</p>
             </div>
             <div class="feature_style_eight_button">
               <div class="button style-four">
                 <a href="{{ url('/consulting-services') }}">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="service_style_seven pt-3 pb-3 pl-4 pr-3 mb-30">
+          <div class="service_style_seven_icon">
+            <img src="{{ asset('theme') }}/assets/images/plug.png" alt="Integration" />
+          </div>
+          <div class="service_style_seven_content">
+            <div class="service_style_seven_title pb-3">
+              <a href="{{ url('/integration') }}">
+                <h4>Salesforce Integration</h4>
+              </a>
+            </div>
+            <div class="service_style_seven_text">
+              <p>We possess extensive expertise in Salesforce integration with various third-party systems. Our team assists in creating RESTful or SOAP web services within Salesforce, enabling seamless communication with external platforms. We provide tailored recommendations on the most suitable integration approaches for your applications, ensuring alignment with your specific business requirements.</p>
+            </div>
+            <div class="feature_style_eight_button">
+              <div class="button style-four">
+                <a href="{{ url('/integration') }}">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="service_style_seven pt-3 pb-3 pl-4 pr-3 mb-30">
+          <div class="service_style_seven_icon">
+            <img src="{{ asset('theme') }}/assets/images/consulting.png" alt="Salesforce Support" />
+          </div>
+          <div class="service_style_seven_content">
+            <div class="service_style_seven_title pb-3">
+              <a href="{{ url('/lightning-migration') }}">
+                <h4>Salesforce Support</h4>
+              </a>
+            </div>
+            <div class="service_style_seven_text">
+              <p>We offer ongoing support to maintain, optimize, and enhance your Salesforce environment, ensuring alignment with evolving business needs, industry standards, and best practices. Partner with us to transform your operations through Salesforce's capabilities, driving growth, efficiency, scalability, innovation, superior customer experiences, and data-driven insights. Let us empower your business to achieve lasting success.</p>
+            </div>
+            <div class="feature_style_eight_button">
+              <div class="button style-four">
+                <a href="{{ url('/lightning-migration') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -112,7 +155,7 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Broadcast messages, news, updates to your customers, Partners and Employees and receive their feedback and suggestions. Using community, we can address large group of people. Using community, customers can get solutions to their issues from the knowledge base of the community using Question and answer discussion, customer support channel, agent support.</p>
+              <p>Broadcast messages, news, updates, and important information to your customers, partners, and employees while receiving their valuable feedback and suggestions. Using community, we can efficiently address a large group of people. Customers can access solutions to their issues from the community’s knowledge base through question-and-answer discussions, customer support channels, and agent assistance, fostering collaboration and engagement.</p>
             </div>
             <div class="feature_style_eight_button">
               <div class="button style-four">
@@ -134,33 +177,11 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Our Salesforce architects thoroughly understand your business functionality, pain points & unique requirements, providing strategic guidance, innovative ideas & tailored technical solutions to address challenges effectively, optimize processes, maximize Salesforce's potential & drive sustainable business growth.</p>
+              <p>Our Salesforce architects thoroughly understand your business functionality, pain points, and unique requirements, providing strategic guidance, innovative ideas, and tailored technical solutions to address challenges effectively, optimize processes, maximize Salesforce's potential, enhance user adoption, improve operational efficiency, and drive sustainable business growth.</p>
             </div>
             <div class="feature_style_eight_button">
               <div class="button style-four">
                 <a href="{{ url('/implementation-services') }}">Know More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="service_style_seven pt-3 pb-3 pl-4 pr-3 mb-30">
-          <div class="service_style_seven_icon">
-            <img src="{{ asset('theme') }}/assets/images/plug.png" alt="Integration" />
-          </div>
-          <div class="service_style_seven_content">
-            <div class="service_style_seven_title pb-3">
-              <a href="{{ url('/integration') }}">
-                <h4>Salesforce Integration</h4>
-              </a>
-            </div>
-            <div class="service_style_seven_text">
-              <p>We have vital expertise in salesforce integration with any third-party system. We help you to create Restful or SOAP web-service inside salesforce which can be consumed by external system. We suggest you about which integration approach is best suitable for your applications based on your business needs.</p>
-            </div>
-            <div class="feature_style_eight_button">
-              <div class="button style-four">
-                <a href="{{ url('/integration') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -183,28 +204,6 @@
             <div class="feature_style_eight_button">
               <div class="button style-four">
                 <a href="{{ url('/field-service-lightning-implementation') }}">Know More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="service_style_seven pt-3 pb-3 pl-4 pr-3 mb-30">
-          <div class="service_style_seven_icon">
-            <img src="{{ asset('theme') }}/assets/images/thunder.png" alt="Salesforce Lightning Migration" />
-          </div>
-          <div class="service_style_seven_content">
-            <div class="service_style_seven_title pb-3">
-              <a href="{{ url('/lightning-migration') }}">
-                <h4>Salesforce Lightning Migration</h4>
-              </a>
-            </div>
-            <div class="service_style_seven_text">
-              <p>Are you looking to migrate your org from Salesforce Classic to Lightning? Our expert team can help with this migration. Why migrate to Lightning? Salesforce releases enhancements every four months, available only on the Lightning Platform. Lightning users access new features at no extra cost, while others may incur additional fees. Lightning offers a better user experience, a responsive UI, and improved sales and marketing forecasts.</p>
-            </div>
-            <div class="feature_style_eight_button">
-              <div class="button style-four">
-                <a href="{{ url('/lightning-migration') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -247,7 +246,7 @@
             <h6>Get in Touch</h6>
           </div>
           <div class="section_main_title">
-            <h2>We’d love to hear from you. Kindly feel free to get in touch with us.</h2>
+            <h2>Looking for an experienced Salesforce team?</h2>
           </div>
         </div>
         <div class="call_do_action_button">

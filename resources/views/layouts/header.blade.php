@@ -62,7 +62,7 @@
         <!-- Calendly badge widget begin -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/vaibhav-jfstechnologies/30min', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff' }); }</script>
+        <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/salesforceservice/help', text: 'Let&rsquo;s Connect Today', color: '#0069ff', textColor: '#ffffff' }); }</script>
         <!-- Calendly badge widget end -->
     </head>
 
@@ -100,7 +100,7 @@
                                     <li><a href="https://twitter.com/kitaracloud"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/profile.php?id=100076460610424"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://www.instagram.com/kitaracloud/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#"><img src="{{ asset('theme') }}/assets/images/wa.png" style="margin-top:-3px;" alt="Whatsapp"/></a></li>
                                 </ul>   
                             </div>
                         </div>
@@ -129,12 +129,12 @@
                             <li>
                                 <a href="{{ url('/services') }}">Services</a>
                                 <ul>
-                                    <li><a href="{{ url('/consulting-services') }}">Salesforce Consulting</a></li>
-                                    <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
-                                    <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
-                                    <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
+                                    <li><a href="{{ url('/consulting-services') }}">Salesforce Development</a></li>
                                     <li><a href="{{ url('/integration') }}">Salesforce Integration</a></li>
-                                    <li><a href="{{ url('/lightning-migration') }}">Salesforce Lightning Migration</a></li>
+                                    <li><a href="{{ url('/lightning-migration') }}">Salesforce Support</a></li>
+                                    <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
+                                    <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
+                                    <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
                                     <li><a href="{{ url('/data-migration') }}">Data Migration</a></li>
                                 </ul>
                             </li>

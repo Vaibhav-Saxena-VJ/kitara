@@ -8,19 +8,9 @@
 <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="breatcome_title">
-          <div class="breatcome_title_inner pb-2">
-            <h2>About Kitaracloud Techlabs</h2>
-          </div>
-          <div class="breatcome_content">
-            <ul>
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-                <i class="fa fa-angle-right"></i><span>About Company</span>
-              </li>
-            </ul>
-          </div>
+      <div class="col-md-6">
+        <div class="breatcome_title_inner pb-2">
+          <h2>Who We Are?</h2>
         </div>
       </div>
     </div>
@@ -76,7 +66,7 @@
             <h5>+91 90336-48701</h5>
           </div>
           <div class="section_main_title">
-            <h2>Have a project in mind? <br> Let's get to work</h2>
+            <h2>Looking for an experienced<br>Salesforce team?</h2>
           </div>
           <div class="button three mt-40">
             <a href="#joinus">Join Us Now<i class="fa fa-long-arrow-right"></i></a>
@@ -95,7 +85,7 @@
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="single_counter text_center mb-4">
           <div class="countr_text">
-            <h2><span class="counter">15</span><span>K</span></h2>
+            <h2><span class="counter">47</span><span>+</span></h2>
           </div>
           <div class="counter_desc">
             <h5>Happy Clients</h5>
@@ -105,17 +95,7 @@
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="single_counter text_center mb-4">
           <div class="countr_text">
-            <h1><span class="counter">1280</span><span>+</span></h1>
-          </div>
-          <div class="counter_desc">
-            <h5>Account Number</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="single_counter text_center mb-4">
-          <div class="countr_text">
-            <h1><span class="counter">10</span><span>K</span></h1>
+            <h1><span class="counter">100</span><span>+</span></h1>
           </div>
           <div class="counter_desc">
             <h5>Finished Projects</h5>
@@ -125,10 +105,20 @@
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="single_counter text_center mb-4">
           <div class="countr_text">
-            <h1><span class="counter">992</span><span>+</span></h1>
+            <h1><span class="counter">20</span><span>+</span></h1>
           </div>
           <div class="counter_desc">
-            <h5>Win Awards</h5>
+            <h5>Current Projects</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="single_counter text_center mb-4">
+          <div class="countr_text">
+            <h1><span class="counter">30</span><span>+</span></h1>
+          </div>
+          <div class="counter_desc">
+            <h5>Team Size</h5>
           </div>
         </div>
       </div>
@@ -138,7 +128,7 @@
 <!----- End Techno Counter Area ----->
 
 <!----- Start Techno Service Area ----->
-<div class="service_area pt-85 pb-70">
+<div class="service_area pt-85 pb-150">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12">
@@ -237,10 +227,9 @@
 <!----- End Techno Service Area ----->
 
 <!----- Start Techno Process Area ----->
-<div class="process_area bg_color2 pt-70 pb-150">
+<!-- <div class="process_area bg_color2 pt-70 pb-150">
   <div class="container">
     <div class="row">
-      <!-- Start Section Tile -->
         <div class="col-lg-12">
           <div class="section_title text_center mb-50 mt-3">
             <div class="section_sub_title uppercase mb-3">
@@ -324,7 +313,7 @@
         </div>
     </div>
   </div>
-</div>
+</div> -->
 <!----- End Techno Process Area ----->
 
 <!----- Start Techno Contact Area ----->

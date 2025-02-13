@@ -12,31 +12,31 @@
         <div class="single_banner">
           <div class="single_banner_content">
             <div class="banner_text_content">
-              <h1>Kitaracloud Techlabs Salesforce</h1>
-              <h1 class="cd-headline clip is-full-width">
+              <h1 title="Welcome to Kitaracloud – Your Trusted Salesforce Partner">Welcome to Kitaracloud<br>Your <span style="color: #0c5adb;">Trusted Salesforce Partner</span></h1>
+              <!-- <h1 class="cd-headline clip is-full-width">
                 <span class="cd-words-wrapper">
                   <b class="is-visible">Consulting Company</b>
                   <b>Implementation Company</b>
                   <b>Integration Company</b>
                 </span>
-              </h1>
+              </h1> -->
             </div>
             <div class="banner_content_text pt-30">
-              <p>We are certified, experienced, innovative and qualified professionals with focus to provide outstanding services to individuals, small and medium sized companies and corporate clients. we ensure 100% customer satisfaction by providing best, innovative, robust and scalable solutions within your deadline and budget. We are always reliable and help out our clients on time.</p>
+              <p>We specialize in delivering exceptional Salesforce solutions tailored to meet the unique needs of individuals, small and medium-sized businesses, and large enterprises. Our team comprises certified and highly experienced professionals who are committed to driving your success with innovative, robust, and scalable solutions.</p>
             </div>
             <div class="slider_button pt-25 d-flex">
               <div class="button">
-                <a href="{{ url('/services') }}">How IT Work <i class="fa fa-long-arrow-right"></i></a>
+                <a href="{{ url('/services') }}">How We Work? <i class="fa fa-long-arrow-right"></i></a>
               </div>
             </div>
-            <div class="data_science_video">
+            <!-- <div class="data_science_video">
               <div class="data_science_video_inner">
                 <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://youtu.be/BS4TUd7FJSg">
                   <i class="fa fa-play"></i>
                   <div id="spinnerbtn"></div>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -49,17 +49,17 @@
             <div class="banner_shape_inner2 bounce-animate">
               <img src="{{ asset('theme') }}/assets/images/shape/3.png" alt="" />
             </div>
-            <div class="banner_shape_inner3 rotateme">
-              <img src="{{ asset('theme') }}/assets/images/shape/4.png" alt="" />
+            <div class="banner_shape_inner3 bounce-animate">
+              <img src="{{ asset('theme') }}/assets/images/shape/6.svg" alt="" />
             </div>
             <div class="banner_shape_inner4">
-              <img src="{{ asset('theme') }}/assets/images/shape/text1.png" alt="" />
+              <img src="{{ asset('theme') }}/assets/images/shape/text11.png" alt="" />
             </div>
             <div class="banner_shape_inner5 bounce-animate2">
-              <img src="{{ asset('theme') }}/assets/images/shape/text2.png" alt="" />
+              <img src="{{ asset('theme') }}/assets/images/shape/text22.png" alt="" />
             </div>
             <div class="banner_shape_inner6 bounce-animate3">
-              <img src="{{ asset('theme') }}/assets/images/shape/text3.png" alt="" />
+              <img src="{{ asset('theme') }}/assets/images/shape/text33.png" alt="" />
             </div>
           </div>
           <div class="single_banner_thumb_inner">
@@ -96,8 +96,7 @@
         <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
           <div class="feature_style_eight_content">
             <div class="feature_style_eight_icon">
-              <!-- <i class="fad fa-bolt"></i> -->
-              <img src="{{ asset('theme') }}/assets/images/flash.png" alt="Field Service Lightning" />
+              <img src="{{ asset('theme') }}/assets/images/data.png" alt="Salesforce Development" />
               <div class="anim-icon">
                 <span class="icon icon-1"></span>
                 <span class="icon icon-2"></span>
@@ -105,14 +104,42 @@
               </div>
             </div>
             <div class="feature_style_eight_title pt-4">
-              <h4><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce FSL Implementation</a></h4>
+              <h4>
+                <a href="{{ url('/consulting-services') }}">Salesforce Development</a>
+              </h4>
             </div>
             <div class="feature_style_eight_text pt-15">
-              <p>Salesforce Field Service Lightning (FSL) Implementation helps to deliver fast and efficient on-site service to the customer.</p>
+              <p>Custom development tailored to enhance your business processes and user experience. Tailoring Salesforce to meet your specific business needs for optimal performance.</p>
             </div>
             <div class="feature_style_eight_button pt-3">
               <div class="button style-four">
-                <a href="{{ url('/field-service-lightning-implementation') }}">Know More</a>
+                <a href="{{ url('/consulting-services') }}">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="feature_style_eight_content">
+            <div class="feature_style_eight_icon">
+              <!-- <i class="fad fa-bolt"></i> -->
+              <img src="{{ asset('theme') }}/assets/images/plug.png" alt="Integration" />
+              <div class="anim-icon">
+                <span class="icon icon-1"></span>
+                <span class="icon icon-2"></span>
+                <span class="icon icon-3"></span>
+              </div>
+            </div>
+            <div class="feature_style_eight_title pt-4">
+              <h4><a href="{{ url('/integration') }}">Salesforce Integration</a></h4>
+            </div>
+            <div class="feature_style_eight_text pt-15">
+              <p>We possess extensive expertise in Salesforce integration with various third-party systems. Our team assists in creating RESTful or SOAP web services within Salesforce, enabling seamless communication with external platforms.</p>
+            </div>
+            <div class="feature_style_eight_button pt-3">
+              <div class="button style-four">
+                <a href="{{ url('/integration') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -122,7 +149,57 @@
       <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
           <div class="feature_style_eight_content">
             <div class="feature_style_eight_icon">
-              <img src="{{ asset('theme') }}/assets/images/implementation.png" alt="" />
+              <img src="{{ asset('theme') }}/assets/images/consulting.png" alt="Support" />
+              <div class="anim-icon">
+                <span class="icon icon-1"></span>
+                <span class="icon icon-2"></span>
+                <span class="icon icon-3"></span>
+              </div>
+            </div>
+            <div class="feature_style_eight_title pt-4">
+              <h4><a href="{{ url('/lightning-migration') }}">Salesforce Support</a></h4>
+            </div>
+            <div class="feature_style_eight_text pt-15">
+              <p>Partner with us to transform your operations through Salesforce's capabilities, driving growth, efficiency, scalability, innovation, superior customer experiences, data-driven insights, and long-term success.</p>
+            </div>
+            <div class="feature_style_eight_button pt-3">
+              <div class="button style-four">
+                <a href="{{ url('/lightning-migration') }}">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="feature_style_eight_content">
+            <div class="feature_style_eight_icon">
+              <img src="{{ asset('theme') }}/assets/images/cloud-service.png" alt="Community Cloud Implementation" />
+              <div class="anim-icon">
+                <span class="icon icon-1"></span>
+                <span class="icon icon-2"></span>
+                <span class="icon icon-3"></span>
+              </div>
+            </div>
+            <div class="feature_style_eight_title pt-4">
+              <h4><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></h4>
+            </div>
+            <div class="feature_style_eight_text pt-15">
+              <p>Broadcast messages, news, and updates to your customers, partners & employees while receiving their feedback & suggestions.</p>
+            </div>
+            <div class="feature_style_eight_button pt-3">
+              <div class="button style-four">
+                <a href="{{ url('/community-cloud-implementation') }}">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="feature_style_eight_content">
+            <div class="feature_style_eight_icon">
+              <img src="{{ asset('theme') }}/assets/images/implementation.png" alt="community-cloud-implementation" />
               <div class="anim-icon">
                 <span class="icon icon-1"></span>
                 <span class="icon icon-2"></span>
@@ -147,7 +224,7 @@
         <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
           <div class="feature_style_eight_content">
             <div class="feature_style_eight_icon">
-              <img src="{{ asset('theme') }}/assets/images/cloud-service.png" alt="" />
+              <img src="{{ asset('theme') }}/assets/images/flash.png" alt="Salesforce Lightning Migration" />
               <div class="anim-icon">
                 <span class="icon icon-1"></span>
                 <span class="icon icon-2"></span>
@@ -156,96 +233,15 @@
             </div>
             <div class="feature_style_eight_title pt-4">
               <h4>
-                <a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a>
+                <a href="{{ url('/field-service-lightning-implementation') }}">Salesforce FSL Implementation</a>
               </h4>
             </div>
             <div class="feature_style_eight_text pt-15">
-              <p>A Salesforce Community Cloud is a platform to Collaborate with your Partners, Customers and Employees.</p>
+              <p>Salesforce Field Service Lightning (FSL) Implementation helps to deliver fast and efficient on-site service to the customer.</p>
             </div>
             <div class="feature_style_eight_button pt-3">
               <div class="button style-four">
-                <a href="{{ url('/community-cloud-implementation') }}">Know More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
-          <div class="feature_style_eight_content">
-            <div class="feature_style_eight_icon">
-              <img src="{{ asset('theme') }}/assets/images/consulting.png" alt="Salesforce Consulting" />
-              <div class="anim-icon">
-                <span class="icon icon-1"></span>
-                <span class="icon icon-2"></span>
-                <span class="icon icon-3"></span>
-              </div>
-            </div>
-            <div class="feature_style_eight_title pt-4">
-              <h4>
-                <a href="{{ url('/consulting-services') }}">Salesforce Consulting</a>
-              </h4>
-            </div>
-            <div class="feature_style_eight_text pt-15">
-              <p>We Provide Salesforce CRM Consulting Services to support your sales, marketing and customer service needs.</p>
-            </div>
-            <div class="feature_style_eight_button pt-3">
-              <div class="button style-four">
-                <a href="{{ url('/consulting-services') }}">Know More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
-          <div class="feature_style_eight_content">
-            <div class="feature_style_eight_icon">
-              <img src="{{ asset('theme') }}/assets/images/thunder.png" alt="Salesforce Lightning Migration" />
-              <div class="anim-icon">
-                <span class="icon icon-1"></span>
-                <span class="icon icon-2"></span>
-                <span class="icon icon-3"></span>
-              </div>
-            </div>
-            <div class="feature_style_eight_title pt-4">
-              <h4>
-                <a href="{{ url('/lightning-migration') }}">Salesforce Lightning Migration</a>
-              </h4>
-            </div>
-            <div class="feature_style_eight_text pt-15">
-              <p>Are you looking for migrating your org from Salesforce Classic to Lighting?</p>
-            </div>
-            <div class="feature_style_eight_button pt-3">
-              <div class="button style-four">
-                <a href="{{ url('/lightning-migration') }}">Know More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="feature_style_eight mb-30 wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
-          <div class="feature_style_eight_content">
-            <div class="feature_style_eight_icon">
-              <img src="{{ asset('theme') }}/assets/images/migration.png" alt="Salesforce Data Migration" />
-              <div class="anim-icon">
-                <span class="icon icon-1"></span>
-                <span class="icon icon-2"></span>
-                <span class="icon icon-3"></span>
-              </div>
-            </div>
-            <div class="feature_style_eight_title pt-4">
-              <h4>
-                <a href="{{ url('/data-migration') }}">Salesforce Data Migration</a>
-              </h4>
-            </div>
-            <div class="feature_style_eight_text pt-15">
-              <p>Data migration is a complicated and time-consuming task which involves data export,</p>
-            </div>
-            <div class="feature_style_eight_button pt-3">
-              <div class="button style-four">
-                <a href="{{ url('/data-migration') }}">Know More</a>
+                <a href="{{ url('/field-service-lightning-implementation') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -524,21 +520,6 @@
 </div>
 <!----- End Techno About Area ----->
 
-<!----- Start Techno Brand Area ----->
-<div class="brand_area bg_color2 pb-50">
-  <div class="container">
-    <div class="row g-3 justify-content-center">
-      <div class="col-md-2">
-        <img src="{{ asset('theme') }}/assets/images/app-dev.png" alt=""/>
-      </div>
-      <div class="col-md-2">
-        <img src="{{ asset('theme') }}/assets/images/elioplus.png" alt=""/>
-      </div>
-    </div>
-  </div>
-</div>
-<!----- End Techno Brand Area ----->
-
 <!----- Start Techno Call Do Action Area ----->
 <div class="call_do_action pt-100 pb-100 bg_color" style="background-image: url({{ asset('theme') }}/assets/images/slider/slider-6.jpg); background-size: cover;">
   <div class="container">
@@ -549,7 +530,7 @@
             <h5>+91 90336-48701</h5>
           </div>
           <div class="section_main_title">
-            <h2>Have a project in mind?<br>Let's get to work</h2>
+            <h2>Looking for an experienced<br>Salesforce team?</h2>
           </div>
           <div class="button three mt-40">
             <a href="{{ url('/contactus') }}">Contact Us<i class="fa fa-long-arrow-right"></i></a>
@@ -563,10 +544,7 @@
 
 <!----- Start Techno Testimonial Area ----->
 <div id="testimonial-section" class="testimonial-bg pt-80 pb-70">
-  <div
-    id="container-general"
-    class="ready anim-section-features anim-section-desc anim-section-quote"
-  >
+  <div id="container-general" class="ready anim-section-features anim-section-desc anim-section-quote">
     <section id="section-quote">
       <div class="col-lg-12">
         <div class="section_title text_center mt-3">
@@ -592,207 +570,67 @@
         <div class="pp-quote li-quote-3" data-textquote="quote-text-3">
           <div class="img animated bounce"></div>
         </div>
-        <div
-          class="pp-quote li-quote-4 active"
-          data-textquote="quote-text-4"
-        >
-          <div class="img animated bounce"></div>
-        </div>
-        <div class="pp-quote li-quote-5" data-textquote="quote-text-5">
-          <div class="img animated bounce"></div>
-        </div>
-        <div class="pp-quote li-quote-6" data-textquote="quote-text-6">
-          <div class="img animated bounce"></div>
-        </div>
       </div>
       <!--Left Bubble Images-->
+
       <!--Center Testimonials-->
       <div class="container-quote carousel-on">
         <!--Testimonial 1-->
-        <div
-          class="quote quote-text-3 hide-bottom"
-          data-ppquote="li-quote-3"
-        >
-          <p>
-            'Managing everyday banking has finally become fun, fast and
-            easy. Icing on the cake, customer support is super reactive: 5
-            stars!'
-          </p>
+        <div class="quote quote-text-1 hide-bottom" data-ppquote="li-quote-1">
+          <p>'Kitaracloud Techlabs automated the client's currency updates, resulting in a successful engagement. The team was responsive and professional and did everything they could to test and help diagnose the issue. The client was impressed with the team's responsiveness and resilience.' </p>
           <div class="container-info">
             <div class="pp"></div>
-            <div class="name">Tom Abel De</div>
-            <div class="job">Digital Marketing</div>
+            <div class="name">Matthew Gill</div>
+            <div class="job">Salesforce Admin</div>
           </div>
         </div>
         <!--Testimonial 2-->
-        <div class="quote quote-text-4 show" data-ppquote="li-quote-4">
-          <p>
-            'Qonto met my needs straight away. ng has finally become fun,
-            fast andCustomer care is awesome! Period.'
-          </p>
+        <div class="quote quote-text-2 show" data-ppquote="li-quote-2">
+          <p>'Thanks to Kitaracloud Techlabs' efforts, the client was able to remove manual tasks, meeting the client's goal. The team delivered the project ahead of schedule and was empathetic to the client's situation and budget. Moreover, they stood out for their excellent service and hardworking attitude.'</p>
           <div class="container-info">
             <div class="pp"></div>
-            <div class="name">Sanuka Santa</div>
-            <div class="job">To To Company</div>
+            <div class="name">Shay Staples</div>
+            <div class="job">VP of Support</div>
           </div>
         </div>
         <!--Testimonial 3-->
-        <div
-          class="quote hide-bottom quote-text-5"
-          data-ppquote="li-quote-5"
-        >
-          <p>
-            'With Qonto, I've been able to order MasterCard cards in
-            seconds. My purchasing team can now be autonomous with their
-            payments. Qonto is game changer.'
-          </p>
+        <div class="quote hide-bottom quote-text-3" data-ppquote="li-quote-3">
+          <p>'Kitaracloud Techlabs successfully completed the projects on time, much to the client's delight. The team was highly proficient from a workflow standpoint, and internal stakeholders were impressed with the service provider's receptiveness to feedback.'</p>
           <div class="container-info">
             <div class="pp"></div>
             <div class="name">Grégoire Pasquet</div>
-            <div class="job">Solf Solution</div>
+            <div class="job">Human Resources</div>
           </div>
         </div>
         <!--Testimonial 4-->
-        <div
-          class="quote hide-bottom quote-text-6"
-          data-ppquote="li-quote-6"
-        >
-          <p>
-            'Qonto? Easy, fast, efficient. Traditionalng has finally become
-            fun, fast and banks' hassles belong to the past!'
-          </p>
+        <div class="quote hide-bottom quote-text-7" data-ppquote="li-quote-7">
+          <p>'The client is happy with Kitaracloud Techlabs' services. The team has managed the engagement well, communicating closely with the client through videos and Teams meetings. They're open to accepting projects outside of the initial scope of work, and their communication skills are truly remarkable.'</p>
           <div class="container-info">
             <div class="pp"></div>
             <div class="name">Nicolas Puran</div>
-            <div class="job">CEO Founder</div>
+            <div class="job">Director - Process Management</div>
           </div>
         </div>
         <!--Testimonial 5-->
-        <div
-          class="quote hide-bottom quote-text-7"
-          data-ppquote="li-quote-7"
-        >
-          <p>
-            'Qonto? A flawless UX and a customer service ng has finally
-            become fun, fast and that cares so much. This is just
-            incredible!'
-          </p>
+        <div class="quote hide-bottom quote-text-8" data-ppquote="li-quote-8">
+          <p>'Kitaracloud Techlabs successfully integrated the new software into the client's Salesforce. Their team impressed the client with their receptiveness to feedback and openness to learning their needs. They also communicated effectively via email, chat, and Zoom meetings.'</p>
           <div class="container-info">
             <div class="pp"></div>
             <div class="name">Mathieu Jouhet</div>
-            <div class="job">Freelance @Hello Mat</div>
+            <div class="job">VP of Sales & Integrations</div>
           </div>
         </div>
         <!--Testimonial 6-->
-        <div
-          class="quote hide-bottom quote-text-8"
-          data-ppquote="li-quote-8"
-        >
-          <p>
-            'I needed a bank similar to a SaaS for LiveMentor: ng has
-            finally become fun, fast and I think I found it.'
-          </p>
+        <div class="quote hide-bottom quote-text-9" data-ppquote="li-quote-9" >
+          <p>'Kitaracloud Techlabs was professional, knowledgeable, and transparent throughout the project. They communicated by email and phone calls. The product was amazing, user-friendly, and made as per their requirements.'</p>
           <div class="container-info">
             <div class="pp"></div>
             <div class="name">Charles Jadran</div>
-            <div class="job">Web Development</div>
-          </div>
-        </div>
-        <!--Testimonial 7-->
-        <div
-          class="quote hide-bottom quote-text-9"
-          data-ppquote="li-quote-9"
-        >
-          <p>
-            'I can say 'Goodbye' to the banking pains I had to ng has
-            finally become fun, fast and bear with, and 'hello' to a way to
-            do finance that makes sense.'
-          </p>
-          <div class="container-info">
-            <div class="pp"></div>
-            <div class="name">Digong Frando</div>
-            <div class="job">CEO Officience</div>
-          </div>
-        </div>
-        <!--Testimonial 8-->
-        <div
-          class="quote hide-bottom quote-text-10"
-          data-ppquote="li-quote-10"
-        >
-          <p>
-            'Qonto is 100% in tune with what we do at Alan.eu: a
-            user-friendly service, a user-centric interface and a very
-            reactive customer support.'
-          </p>
-          <div class="container-info">
-            <div class="pp"></div>
-            <div class="name">Charles Samuelian</div>
-            <div class="job">Director & Photo Man</div>
-          </div>
-        </div>
-        <!--Testimonial 9-->
-        <div
-          class="quote hide-bottom quote-text-11"
-          data-ppquote="li-quote-11"
-        >
-          <p>
-            'I have been looking for a modern and efficient banking
-            alternative that could support the development of my business.
-            I'm just wondering why Qonto did not exist before!'
-          </p>
-          <div class="container-info">
-            <div class="pp"></div>
-            <div class="name">Khatry Firmanio</div>
-            <div class="job">CEO Company</div>
-          </div>
-        </div>
-        <!--Testimonial 10-->
-        <div
-          class="quote hide-bottom quote-text-13"
-          data-ppquote="li-quote-13"
-        >
-          <p>
-            'That's just perfect - It rocks baby! ng has finally become fun,
-            fast and You wanna apply at TheFamily? Use Qonto first.'
-          </p>
-          <div class="container-info">
-            <div class="pp"></div>
-            <div class="name">Jadran Parvej Imon</div>
-            <div class="job">CEO Managar</div>
-          </div>
-        </div>
-        <!--Testimonial 11-->
-        <div
-          class="quote quote-text-1 hide-bottom"
-          data-ppquote="li-quote-1"
-        >
-          <p>
-            'I wish I could have had Qonto ng has finally become fun, fast
-            andenrolled in the Techstars Paris's first batch!'
-          </p>
-          <div class="container-info">
-            <div class="pp"></div>
-            <div class="name">Bertier Luyt</div>
-            <div class="job">Managing Director</div>
-          </div>
-        </div>
-        <!--Testimonial 12-->
-        <div
-          class="quote quote-text-2 hide-bottom"
-          data-ppquote="li-quote-2"
-        >
-          <p>
-            'Thanks to a slick interface and simple ng has finally become
-            fun, fast and features, managing payments and expenses has
-            become a piece of cake!'
-          </p>
-          <div class="container-info">
-            <div class="pp"></div>
-            <div class="name">Darpon Abir Khan</div>
-            <div class="job">Founder Officience</div>
+            <div class="job">Founder & CEO</div>
           </div>
         </div>
       </div>
+      
       <!--Right Bubble Images-->
       <div class="container-pe-quote right">
         <div class="pp-quote li-quote-7" data-textquote="quote-text-7">
@@ -804,17 +642,139 @@
         <div class="pp-quote li-quote-9" data-textquote="quote-text-9">
           <div class="img animated bounce"></div>
         </div>
-        <div class="pp-quote li-quote-10" data-textquote="quote-text-10">
-          <div class="img animated bounce"></div>
-        </div>
-        <div class="pp-quote li-quote-11" data-textquote="quote-text-11">
-          <div class="img animated bounce"></div>
-        </div>
-        <div class="pp-quote li-quote-13" data-textquote="quote-text-13">
-          <div class="img animated bounce"></div>
-        </div>
       </div>
     </section>
+  </div>
+
+  <div class="row wow fadeInLeft pt-3" data-wow-delay=".4">
+    <div class="brand-list3 owl-carousel">
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl2.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl5.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl6.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl7.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl8.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl9.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl10.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl11.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl12.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl13.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl14.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl15.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl16.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl17.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="brand-thumb-box">
+          <div class="brand-img">
+            <img src="{{ asset('theme') }}/assets/images/brand/cl18.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!----- End Techno Testimonial Area ----->

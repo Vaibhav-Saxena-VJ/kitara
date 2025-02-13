@@ -8,19 +8,10 @@
 <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="breatcome_title">
+      <div class="col-lg-6 p-0">
+        <div class="">
           <div class="breatcome_title_inner pb-2">
             <h2>Our Products</h2>
-          </div>
-          <div class="breatcome_content">
-            <ul>
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-                <i class="fa fa-angle-right"></i>
-                <span>Our Products</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -145,7 +136,7 @@
             <h6>Get in Touch</h6>
           </div>
           <div class="section_main_title">
-            <h2>We’d love to hear from you. Kindly feel free to get in touch with us.</h2>
+            <h2>Got an AppExchange idea? We can build and list it for you!</h2>
           </div>
         </div>
         <div class="call_do_action_button">

@@ -1,5 +1,5 @@
 @extends('layouts.header')
-@section('title', "Salesforce Lightning Migration Services - Kitaracloud")
+@section('title', "Salesforce Support Services - Kitaracloud")
 @section('description', "Are you looking for migrating your org from Salesforce Classic to Lighting? Our Lightning Expert team help you for this migration. why you should migrate to lightning?")
 @section('keywords', "Salesforce Consulting Services, Salesforce Implementation Services, Community Cloud Implementation")
 
@@ -8,21 +8,9 @@
 <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="breatcome_title">
-          <div class="breatcome_title_inner pb-2">
-            <h2>Salesforce Lightning Migration Services</h2>
-          </div>
-          <div class="breatcome_content">
-            <ul>
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-                <i class="fa fa-angle-right"></i> <a href="{{ url('/services') }}"> Services</a>
-                <i class="fa fa-angle-right"></i>
-                <span>Lightning Migration</span>
-              </li>
-            </ul>
-          </div>
+      <div class="col-lg-6 p-0">
+        <div class="breatcome_title_inner pb-2">
+          <h2>Salesforce Support Services</h2>
         </div>
       </div>
     </div>
@@ -36,7 +24,7 @@
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
         <div class="section_title text_left mb-40 mt-3">
           <div class="section_main_title">
-            <h1>We Provide Salesforce<br><span>Lightning Migration</span></h1>
+            <h1>We Provide<br><span>Salesforce Support</span></h1>
           </div>
           <div class="em_bar">
             <div class="em_bar_bg"></div>
@@ -205,7 +193,7 @@
       <div class="col-lg-12">
         <div class="call-do-action-content">
           <div class="call-do-action-title text_center wow fadeInDown" data-wow-delay=".4">
-            <h2>Have a project in mind?<br>Let's get to work</h2>
+            <h2>Looking for an experienced <br>Salesforce team?</h2>
           </div>
           <div class="call-button text_center wow fadeInUp" data-wow-delay=".5">
             <a href="#">Let's Connect <i class="bi bi-arrow-right"></i></a>

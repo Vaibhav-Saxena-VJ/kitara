@@ -84,7 +84,7 @@
                         <a href="https://twitter.com/kitaracloud"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=100076460610424"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kitaracloud/"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><img src="{{ asset('theme') }}/assets/images/wa.png" style="margin-top:-3px;" alt=""/></a>
                     </div>
                 </div>
             </div>
