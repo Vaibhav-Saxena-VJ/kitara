@@ -5,7 +5,7 @@
 
 @section('content')
 <!-- Start Techno Breatcome Area -->
-<div class="breatcome_area d-flex align-items-center">
+<!-- <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -15,11 +15,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- End Techno Breatcome Area -->
 
 <!----- Start Techno About Area ----->
-<div class="about_area pt-85 pb-100">
+<div class="about_area pt-50 pb-100">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6">

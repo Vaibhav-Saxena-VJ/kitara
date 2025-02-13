@@ -5,7 +5,7 @@
 
 @section('content')
 <!-- Start Techno Breatcome Area -->
-<div class="breatcome_area d-flex align-items-center">
+<!-- <div class="breatcome_area d-flex align-items-center">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 p-0">
@@ -15,7 +15,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- End Techno Breatcome Area -->
 
 <div class="about_area pb-50">
@@ -89,7 +89,7 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>We Provide Salesforce CRM Development Services to support your sales, marketing and customer service needs. In case you decide to implement Salesforce CRM, migrate from another CRM to Salesforce, optimize existing Salesforce solution, add automation for Sales, Service and marketing department, we provide outstanding, best and cost-effective Salesforce consulting services.</p>
+              <p>Custom development tailored to enhance your business processes, scalability, automation, security, flexibility, and user experience. Tailoring Salesforce to meet your specific business needs for optimal performance, efficiency, seamless integration, data accuracy, enhanced productivity, real-time insights, streamlined workflows, and long-term success.</p>
             </div>
             <div class="feature_style_eight_button">
               <div class="button style-four">
@@ -133,7 +133,7 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>We offer ongoing support to maintain, optimize, and enhance your Salesforce environment, ensuring alignment with evolving business needs, industry standards, and best practices. Partner with us to transform your operations through Salesforce's capabilities, driving growth, efficiency, scalability, innovation, superior customer experiences, and data-driven insights. Let us empower your business to achieve lasting success.</p>
+              <p>Ongoing support services to maintain, optimize, and scale your Salesforce environment for seamless performance, security, and reliability. Join us in transforming your business with the power of Salesforce. Let’s work together to create innovative solutions that drive growth, efficiency, productivity, enhanced user experience, data-driven decision-making, streamlined operations, and long-term success.</p>
             </div>
             <div class="feature_style_eight_button">
               <div class="button style-four">
