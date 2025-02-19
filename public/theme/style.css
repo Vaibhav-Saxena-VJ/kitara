@@ -263,6 +263,28 @@ Mobile style's
   .menu .show-on-mobile {
     display: block;
   }
+
+  a.dtbtn {
+    font-size: 14px !important;
+    padding: 3px 15px !important;
+    text-transform: uppercase;
+  }
+
+  .donate-btn-header {
+    padding: 5px 0;
+  }
+
+  .w-30s{
+    width: 30%;
+  }
+
+  .w-70s{
+    width: 70%;
+  }
+
+  .w-45s{
+    width: 45%;
+  }
 }
 
 html {
@@ -14779,15 +14801,16 @@ ul.accordion.upper {
 }
 #scrollUp {
   background: #0c5adb none repeat scroll 0 0;
-  bottom: 30px;
+  bottom: 20px;
   color: #fff;
   font-size: 22px;
   height: 40px;
   line-height: 40px;
-  right: 100px;
+  right: auto;
   text-align: center;
   width: 40px;
   border-radius: 50%;
+  left: 20px;
 }
 .intro__bg,
 .intro__bg canvas {
@@ -15913,6 +15936,41 @@ div#particles .slider18 {
 }
 
 .calendly-badge-widget { 
-  right: auto !important; 
-  left: 20px !important; 
+  bottom: 20px !important;
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+  cursor: pointer;
+  display: table-cell;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  width: 60px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 60px;  /* Adjust size as needed */
+  height: 60px;
+  background-color: #25D366; /* WhatsApp green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon img {
+  width: 35px; /* Adjust icon size */
+  height: auto;
 }

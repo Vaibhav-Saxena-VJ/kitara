@@ -20,38 +20,8 @@
 </div> -->
 <!-- End Techno Breatcome Area -->
 
-<!----- Start Techno About Area ----->
-<div class="about_area pt-85 pb-70">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
-        <div class="about_thumb">
-          <img src="{{ asset('theme') }}/assets/images/about-2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
-        <div class="section_title text_left mb-40 mt-3">
-          <div class="section_sub_title uppercase mb-3">
-            <h6>5 YEARS OF EXPERIENCE</h6>
-          </div>
-          <div class="section_main_title">
-            <h1>We Provide Best <span>Cloud Solutions</span> For Your Success</h1>
-          </div>
-          <div class="em_bar">
-            <div class="em_bar_bg"></div>
-          </div>
-          <div class="section_content_text bold pt-5">
-            <p>Our team believe in respecting and caring for each other. We have an amazing team of Expert and Certified Professionals who are always happy to help our customers in any situation. our team’s motto is our customer should get maximum revenue out of their investment. We provide Innovative, accurate, high-quality and best solutions at good prices.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!----- End Techno About Area ----->
-
 <!----- Start Techno Service Area ----->
-<div class="service_area pb-70">
+<div class="service_area pt-50 pb-70">
   <div class="container">
     <div class="row">
       <!-- Start Section Tile -->
