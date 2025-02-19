@@ -11,22 +11,23 @@
                     </div>
                     <div class="company-info-desc">
                         <p>Kitaracloud was founded with the vision of helping business grow using Salesforce®.</p>
-                        <div class="row align-items-center">
-                            <div class="col-md-7 bg-white rounded" style="padding: 15px;">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-7 bg-white rounded w-45s" style="padding: 15px;">
                                 <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="40" data-nofollow="true" data-expandifr="true" data-scale="100" data-clutchcompany-id="2027783">
                                     <iframe id="iframe-0.292285126529358" width="100%" src="https://widget.clutch.co/widgets/get/1?ref_domain=www.kitaracloud.com&amp;uid=2027783&amp;rel_nofollow=true&amp;ref_path=/" height="40px" scrolling="no" style="border: none; overflow: hidden; display: block;" title="[iFrameSizer]iframe-0.292285126529358:0:0:mouseleave:559:3051"></iframe>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5 w-30s">
                                 <a href="https://www.forcetalks.com/kitaracloud/" target="_blank">
                                     <img src="https://www.kitaracloud.com/wp-content/uploads/2020/09/forcetalksalesforce.png" class="w-100" alt="">
                                 </a>
                             </div>
-                            <div class="col-md-10 bg-white rounded ptb-2">
+                            <div class="col-md-10 bg-white rounded ptb-2 w-70s">
                                 <a href="https://appexchange.salesforce.com/appxConsultingListingDetail?listingId=3158b923-9038-4fdb-bd17-b42a5586d791" target="_blank">
                                     <img src="{{ asset('theme') }}/assets/images/appexchange.png" class="w-100" alt="">
                                 </a>
                             </div>
+                            <div class="col-md-2"></div>
                         </div>
                     </div>
                 </div>
@@ -51,13 +52,13 @@
                     <h4 class="widget-title pb-4">Our Services</h4>
                     <div class="menu-quick-link-container ml-4">
                         <ul id="menu-quick-link" class="menu">
-                        <li><a href="{{ url('/consulting-services') }}">Salesforce Development</a></li>
-                                    <li><a href="{{ url('/integration') }}">Salesforce Integration</a></li>
-                                    <li><a href="{{ url('/lightning-migration') }}">Salesforce Support</a></li>
-                                    <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
-                                    <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
-                                    <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
-                                    <li><a href="{{ url('/data-migration') }}">Data Migration</a></li>
+                            <li><a href="{{ url('/consulting-services') }}">Salesforce Development</a></li>
+                            <li><a href="{{ url('/integration') }}">Salesforce Integration</a></li>
+                            <li><a href="{{ url('/lightning-migration') }}">Salesforce Support</a></li>
+                            <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
+                            <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
+                            <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
+                            <li><a href="{{ url('/data-migration') }}">Data Migration</a></li>
                         </ul>
                     </div> 
                 </div>
@@ -84,7 +85,6 @@
                         <a href="https://twitter.com/kitaracloud"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=100076460610424"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kitaracloud/"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><img src="{{ asset('theme') }}/assets/images/wa.png" style="margin-top:-3px;" alt=""/></a>
                     </div>
                 </div>
             </div>

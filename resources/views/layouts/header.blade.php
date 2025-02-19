@@ -100,7 +100,6 @@
                                     <li><a href="https://twitter.com/kitaracloud"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/profile.php?id=100076460610424"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://www.instagram.com/kitaracloud/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><img src="{{ asset('theme') }}/assets/images/wa.png" style="margin-top:-3px;" alt="Whatsapp"/></a></li>
                                 </ul>   
                             </div>
                         </div>
@@ -188,5 +187,8 @@
         {{-- end main content --}}
 
         @include('layouts.footer')
+        <a href="https://api.whatsapp.com/send?phone=919033648701&text=Hello,%20I%27m%20looking%20for" target="_blank" class="whatsapp-icon">
+            <img src="{{ asset('theme') }}/assets/images/wa.png" alt="WhatsApp">
+        </a>
     </body>
 </html>
