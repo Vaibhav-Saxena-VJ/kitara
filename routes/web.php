@@ -18,8 +18,8 @@ Route::get('/contactus', function () {
     return view('frontend.contactus');
 });
 
-Route::get('/consulting-services', function () {
-    return view('frontend.consulting-services');
+Route::get('/salesforce-development', function () {
+    return view('frontend.salesforce-development');
 });
 
 Route::get('/implementation-services', function () {
@@ -42,8 +42,8 @@ Route::get('/integration', function () {
     return view('frontend.integration');
 });
 
-Route::get('/lightning-migration', function () {
-    return view('frontend.lightning-migration');
+Route::get('/salesforce-support', function () {
+    return view('frontend.salesforce-support');
 });
 
 Route::get('/products', function () {

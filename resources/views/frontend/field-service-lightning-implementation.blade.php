@@ -33,13 +33,7 @@
         <div class="singel_about_left">
           <div class="singel_about_left_inner mb-3">
             <div class="singel-about-content boder pl-4">
-              <p>Salesforce FSL helps to deliver fast and efficient on-site service to the customer. Salesforce Field Service provides valuable insight so all team can work efficiently, this will save lots of time and money of the organization. Field Service Lightning (FSL) is part of the Salesforce Service Cloud suite that provides a comprehensive view of workforce management.</p>
-              <ul>
-                <li>Configure/ Customize FSL</li>
-                <li>Agent</li>
-                <li>Dispatcher</li>
-                <li>Field Technician</li>
-              </ul>
+              <p>Our <strong>Salesforce Field Service Lightning (FSL) Implementation</strong> services are designed to streamline field operations by optimizing the workflows of <strong>agents</strong>, <strong>dispatchers</strong>, and <strong>field technicians</strong>. We configure and customize FSL to enhance scheduling, dispatching, and mobile workforce management, ensuring seamless coordination between the back office and field teams.</p>
             </div>
           </div>
         </div>
@@ -75,8 +69,13 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-            <p>Our Certified FSL team connect with your stakeholders and understand your field service business needs. based on discussion we suggest better optimized approach to you which increase your customer experience. We also help you to migrate your existing field service functionality inside salesforce from external system.</p>
-            <p>Our FSL team configure FSL features according to your needs, this includes configure process to create work order and service appointment easily, Create Service resources, set skill sets, operating hours and standard work order templates unique to your business, We configure Salesforce app to provide mobile access to your field technician, Track inventory and van stock so your field technician has what they need when they’re at a customer site, generate Report and analyse field service data.</p>
+            <p>We <strong>configure and customize Salesforce Field Service Lightning (FSL)</strong> to align with business-specific field service operations. This includes setting up core FSL components such as <strong>Work Orders</strong>, <strong>Service Appointments</strong>, <strong>Service Territories</strong>, and <strong>Service Resources</strong> to ensure seamless job allocation and execution:</p>
+            <ul>
+              <li><strong>Work Order & Service Appointment Customization –</strong> We configure custom workflows for creating, scheduling, and tracking service tasks, ensuring that each appointment is assigned based on skill set, availability, and location.</li>
+              <li><strong>Dispatcher Console Setup –</strong> Our customization ensures dispatchers have full visibility into field operations, enabling them to make data-driven decisions for job assignments and real-time scheduling adjustments.</li>
+              <li><strong>FSL Mobile App Customization – </strong>We tailor the <strong>Field Service Mobile App</strong> for field technicians, enabling offline access, automated status updates, GPS tracking, and digital signature capture to enhance on-site efficiency.</li>
+              <li><strong>Service Resource Management – </strong>Configure skill-based and location-based assignments to optimize technician utilization and reduce response times.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -98,7 +97,7 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-            <p>Our FSL Expert team configure Omni-Channel, Chat bot (Answer the phone with AI) and integrate third party telephonic service with Salesforce. So, your agent can take customer service calls and create Service appointments based on service resource skills and region.</p>
+            <p>We configure <strong>FSL for Agents</strong>, enabling them to create and manage work orders, track service requests, and ensure proper customer communication. Agents can efficiently assign jobs, monitor service progress, and provide real-time updates to customers, improving overall service efficiency.</p>
           </div>
         </div>
         <div class="section_title text_left">
@@ -109,7 +108,7 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-            <p>Our FSL Expert team help you to configure dispatcher role and profile so they can assign service appointments Based on technician Skills, availability, customer preferences and travelling time. We help to configure or customize the dispatcher console, which is part of managed package, this will help dispatchers schedule, optimize, and dispatch service appointments from one screen, keeping in mind driving time and services times. Dispatcher console also provide facility to delegate work to other field technician in case of some incident or emergency.</p>
+            <p>For <strong>Dispatchers</strong>, we customize the <strong>Dispatcher Console</strong>, allowing real-time scheduling and optimization of service appointments. Our implementation ensures automated appointment booking, intelligent routing, and skill-based technician assignments, reducing response times and increasing operational efficiency. Dispatchers gain full visibility into technician availability, location, and job status, enabling quick decision-making and effective resource allocation.</p>
           </div>
         </div>
       </div>
@@ -143,8 +142,8 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-            <p>These are the actual people who perform the actual groundwork at customer site. Every technician has their FSL app installed in their device contains real-time data at their fingertips to Manages their service appointments, closing work orders, tracking the parts they used, and providing service reports to customer to get acknowledgement of work has been completed successfully.</p>
-            <p>Our FSL Expert team help to create knowledge base to provide faster and better resolution to the customers. these will be accessible from your field technician. Anyone from the team can access FSL by opening the Field Service Lightning App and clicking on the Work Orders Tab.</p>
+            <p><strong>Field Technicians</strong> benefit from a customized <strong>FSL Mobile App</strong>, which provides them with real-time access to work orders, job details, and customer information. We configure mobile workflows to support offline access, image capturing, digital signatures, and automated job status updates. GPS tracking and route optimization further enhance technician productivity by minimizing travel time and ensuring on-time service completion.</p>
+            <p>Our comprehensive <strong>FSL implementation</strong> empowers businesses with <strong>efficient resource allocation</strong>, <strong>reduced operational costs</strong>, and <strong>enhanced customer satisfaction</strong>, making field service management more proactive and data-driven.</p>
           </div>
         </div>
       </div>

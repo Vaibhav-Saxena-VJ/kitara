@@ -52,9 +52,9 @@
                     <h4 class="widget-title pb-4">Our Services</h4>
                     <div class="menu-quick-link-container ml-4">
                         <ul id="menu-quick-link" class="menu">
-                            <li><a href="{{ url('/consulting-services') }}">Salesforce Development</a></li>
+                            <li><a href="{{ url('/salesforce-development') }}">Salesforce Development</a></li>
                             <li><a href="{{ url('/integration') }}">Salesforce Integration</a></li>
-                            <li><a href="{{ url('/lightning-migration') }}">Salesforce Support</a></li>
+                            <li><a href="{{ url('/salesforce-support') }}">Salesforce Support</a></li>
                             <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
                             <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
                             <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>

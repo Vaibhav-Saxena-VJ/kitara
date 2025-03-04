@@ -4652,7 +4652,7 @@ marquee span {
   -o-transition: 0.5s;
   transition: 0.5s;
   text-align: center;
-  padding: 35px 30px 10px;
+  padding: 35px 25px 10px;
   box-shadow: 0 10px 29.7px 0.3px rgba(225, 225, 225, 0.64);
   position: relative;
   border-radius: 0px 50px 50px 50px;

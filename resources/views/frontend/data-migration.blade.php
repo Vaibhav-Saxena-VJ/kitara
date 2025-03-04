@@ -33,7 +33,7 @@
         <div class="singel_about_left mb-30">
           <div class="singel_about_left_inner mb-3">
             <div class="singel-about-content boder pl-4">
-              <p>Data migration is a complicated and time-consuming task which involves data export, data mapping, data cleansing and data moving from any CRM, old On-premise or Cloud system to Salesforce org. Before we migrate data, first we have to migrate metadata. After Setting up new Salesforce CRM system, we will get all your existing data from your present CRM platform to your newly configured Salesforce org.</p>
+              <p>Our <strong>Data Migration Services</strong> ensure a smooth, secure, and efficient transfer of data from legacy systems, databases, or external platforms into Salesforce. We follow a structured approach to migrate large volumes of data while maintaining accuracy, integrity, and compliance. Whether transitioning from another CRM, ERP, or custom-built system, we handle <strong>data extraction</strong>, <strong>transformation</strong>, <strong>cleansing</strong>, <strong>validation</strong>, and <strong>loading (ETL)</strong> to ensure seamless migration without data loss or corruption. Our expertise includes migrating <strong>Accounts</strong>, <strong>Contacts</strong>, <strong>Leads</strong>, <strong>Opportunities</strong>, <strong>Cases</strong>, <strong>Products</strong>, <strong>Custom Objects</strong>, and <strong>Historical Records</strong>, ensuring all business-critical data is properly structured and optimized within Salesforce.</p>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-            <p>Our Migration expert team analyse your data model based on your business requirement. after discussion with your stackholders, we provide project planning, and proper estimation based on complexity of the project and ensure you with an Efficient Migration Strategy, we will gathered data by different teams relevant to your busines and identify which objects data need to be migrated inside salesforce. Our team create data model architectural diagram and setup data model inside salesforce. We do customization as well whenever needed. Our team ensure your migration complete seamlessly with minimal diruptions to your current business.</p>
+            <p>Before initiating the migration process, we conduct a <strong>comprehensive data analysis</strong> to assess data quality, identify inconsistencies, and map data fields between the source and target systems. This phase involves <strong>data profiling</strong>, <strong>deduplication</strong>, <strong>standardization</strong>, and <strong>identifying dependencies</strong> to minimize errors during migration. We collaborate closely with stakeholders to define <strong>data mapping strategies</strong>, <strong>transformation rules</strong>, and <strong>field relationships</strong> to ensure that the migrated data aligns with Salesforce’s architecture and business processes. Additionally, we assess data security and compliance requirements to safeguard sensitive information during the migration process.</p>
           </div>
         </div>
       </div>
@@ -89,13 +89,7 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-            <p>Once Migration process completes we will verify data to Salesforce platform by running reports or custom soql queries, our migration team ensure all the data is migrated successfully in correct formats with correct relationships.</p>
-            <ul>
-              <li>Benefits of Data Migration</li>
-              <li>User do not have to switch to old system</li>
-              <li>User will get clean and less complicated data</li>
-              <li>Salesforce Reports and dashboards make seamless view of entire data set</li>
-            </ul>
+            <p>Once data is prepared, we execute the migration using industry-best tools such as <strong>Salesforce Data Loader</strong>, <strong>Talend</strong>, <strong>Jitterbit</strong>, <strong>MuleSoft</strong>, or <strong>custom ETL scripts</strong>. Our migration process follows a <strong>phased approach</strong>, including data extraction, transformation, staging, validation, and final deployment into Salesforce. Post-migration, we conduct rigorous <strong>data integrity checks</strong>, <strong>reconciliation</strong>, and <strong>validation testing</strong> to ensure accuracy. This includes <strong>record count matching</strong>, <strong>field-level data verification</strong>, <strong>duplicate identification</strong>, and <strong>business logic validation</strong> to confirm that all data is migrated successfully. We also provide <strong>user acceptance testing (UAT)</strong> and post-migration support to address any discrepancies, ensuring a seamless transition with minimal downtime. With our <strong>expert-driven data migration approach</strong>, businesses can ensure <strong>a secure</strong>, <strong>error-free</strong>, and <strong>efficient transition to Salesforce</strong>, maintaining <strong>data consistency</strong>, <strong>usability</strong>, and <strong>compliance</strong> throughout the process.</p>
           </div>
         </div>
       </div>

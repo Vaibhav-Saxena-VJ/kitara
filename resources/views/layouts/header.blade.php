@@ -128,9 +128,9 @@
                             <li>
                                 <a href="{{ url('/services') }}">Services</a>
                                 <ul>
-                                    <li><a href="{{ url('/consulting-services') }}">Salesforce Development</a></li>
+                                    <li><a href="{{ url('/salesforce-development') }}">Salesforce Development</a></li>
                                     <li><a href="{{ url('/integration') }}">Salesforce Integration</a></li>
-                                    <li><a href="{{ url('/lightning-migration') }}">Salesforce Support</a></li>
+                                    <li><a href="{{ url('/salesforce-support') }}">Salesforce Support</a></li>
                                     <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
                                     <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
                                     <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
@@ -158,12 +158,12 @@
                         <li>
                             <a href="{{ url('/services') }}">Services</a>
                             <ul>
-                                <li><a href="{{ url('/consulting-services') }}">Salesforce Consulting</a></li>
-                                <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
-                                <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
-                                <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
+                                <li><a href="{{ url('/salesforce-development') }}">Salesforce Development</a></li>
                                 <li><a href="{{ url('/integration') }}">Salesforce Integration</a></li>
-                                <li><a href="{{ url('/lightning-migration') }}">Salesforce Lightning Migration</a></li>
+                                <li><a href="{{ url('/salesforce-support') }}">Salesforce Support</a></li>
+                                <li><a href="{{ url('/community-cloud-implementation') }}">Community Cloud Implementation</a></li>
+                                <li><a href="{{ url('/implementation-services') }}">Salesforce Implementation</a></li>
+                                <li><a href="{{ url('/field-service-lightning-implementation') }}">Salesforce Field Service Lightning Implementation</a></li>
                                 <li><a href="{{ url('/data-migration') }}">Data Migration</a></li>
                             </ul>
                         </li>
