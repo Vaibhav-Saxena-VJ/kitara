@@ -49,7 +49,7 @@
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text bold pt-5">
-            <p>Our team believe in respecting and caring for each other. We have an amazing team of Expert and Certified Professionals who are always happy to help our customers in any situation. our team’s motto is our customer should get maximum revenue out of their investment. We provide Innovative, accurate, high-quality and best solutions at good prices.</p>
+            <p>At Kitaracloud Techlabs, we are dedicated to empowering businesses by leveraging the full potential of Salesforce. Our comprehensive suite of services is designed to address diverse business challenges, ensuring seamless integration, enhanced productivity, and accelerated growth. Below is an overview of the services we offer:</p>
           </div>
         </div>
       </div>
@@ -84,16 +84,23 @@
           </div>
           <div class="service_style_seven_content">
             <div class="service_style_seven_title pb-3">
-              <a href="{{ url('/consulting-services') }}">
+              <a href="{{ url('/salesforce-development') }}">
                 <h4>Salesforce Development</h4>
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Custom development tailored to enhance your business processes, scalability, automation, security, flexibility, and user experience. Tailoring Salesforce to meet your specific business needs for optimal performance, efficiency, seamless integration, data accuracy, enhanced productivity, real-time insights, streamlined workflows, and long-term success.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Custom Development and Automation</li>
+                <li><i class="fas fa-check-circle"></i> Implement robust security and Compliance</li>
+                <li><i class="fas fa-check-circle"></i> User Experience Enhancement</li>
+                <li><i class="fas fa-check-circle"></i> Seamless Integration</li>
+                <li><i class="fas fa-check-circle"></i> Enhanced Productivity</li>
+                <li><i class="fas fa-check-circle"></i> Build a scalable Salesforce ecosystem</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
-                <a href="{{ url('/consulting-services') }}">Know More</a>
+                <a href="{{ url('/salesforce-development') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -111,9 +118,16 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>We possess extensive expertise in Salesforce integration with various third-party systems. Our team assists in creating RESTful or SOAP web services within Salesforce, enabling seamless communication with external platforms. We provide tailored recommendations on the most suitable integration approaches for your applications, ensuring alignment with your specific business requirements.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Custom API Development (REST, SOAP)</li>
+                <li><i class="fas fa-check-circle"></i> Integrate Salesforce with External Systems</li>
+                <li><i class="fas fa-check-circle"></i> Middleware Solutions (MuleSoft, Dell Boomi)</li>
+                <li><i class="fas fa-check-circle"></i> Real-Time Data Sync</li>
+                <li><i class="fas fa-check-circle"></i> Scalability & Performance</li>
+                <li><i class="fas fa-check-circle"></i> Security & Compliance</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
                 <a href="{{ url('/integration') }}">Know More</a>
               </div>
@@ -128,16 +142,23 @@
           </div>
           <div class="service_style_seven_content">
             <div class="service_style_seven_title pb-3">
-              <a href="{{ url('/lightning-migration') }}">
+              <a href="{{ url('/salesforce-support') }}">
                 <h4>Salesforce Support</h4>
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Ongoing support services to maintain, optimize, and scale your Salesforce environment for seamless performance, security, and reliability. Join us in transforming your business with the power of Salesforce. Let’s work together to create innovative solutions that drive growth, efficiency, productivity, enhanced user experience, data-driven decision-making, streamlined operations, and long-term success.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Proactive System Monitoring</li>
+                <li><i class="fas fa-check-circle"></i> Proactive Issue Resolution</li>
+                <li><i class="fas fa-check-circle"></i> Routine Maintenance and Upgrades</li>
+                <li><i class="fas fa-check-circle"></i> User Support and Training</li>
+                <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Data Management Assistance</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
-                <a href="{{ url('/lightning-migration') }}">Know More</a>
+                <a href="{{ url('/salesforce-support') }}">Know More</a>
               </div>
             </div>
           </div>
@@ -155,9 +176,16 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Broadcast messages, news, updates, and important information to your customers, partners, and employees while receiving their valuable feedback and suggestions. Using community, we can efficiently address a large group of people. Customers can access solutions to their issues from the community’s knowledge base through question-and-answer discussions, customer support channels, and agent assistance, fostering collaboration and engagement.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Custom Community Development</li>
+                <li><i class="fas fa-check-circle"></i> Security Model Configuration</li>
+                <li><i class="fas fa-check-circle"></i> User Experience Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Mobile Accessibility</li>
+                <li><i class="fas fa-check-circle"></i> Performance Analytics</li>
+                <li><i class="fas fa-check-circle"></i> Integration & Automation</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
                 <a href="{{ url('/community-cloud-implementation') }}">Know More</a>
               </div>
@@ -177,9 +205,17 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Our Salesforce architects thoroughly understand your business functionality, pain points, and unique requirements, providing strategic guidance, innovative ideas, and tailored technical solutions to address challenges effectively, optimize processes, maximize Salesforce's potential, enhance user adoption, improve operational efficiency, and drive sustainable business growth.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Business Process Analysis</li>
+                <li><i class="fas fa-check-circle"></i> Customization and Configuration</li>
+                <li><i class="fas fa-check-circle"></i> Custom Technical Solutions</li>
+                <li><i class="fas fa-check-circle"></i> Scalability & Flexibility</li>
+                <li><i class="fas fa-check-circle"></i> Data Migration and Validation</li>
+                <li><i class="fas fa-check-circle"></i> User Adoption & Training</li>
+                <li><i class="fas fa-check-circle"></i> Ongoing Support & Enhancements</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
                 <a href="{{ url('/implementation-services') }}">Know More</a>
               </div>
@@ -199,9 +235,16 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Salesforce FSL helps to deliver fast and efficient on-site service to the customer. Salesforce Field Service provides valuable insight so all team can work efficiently, this will save lots of time and money of the organization. Field Service Lightning (FSL) is part of the Salesforce Service Cloud suite that provides a comprehensive view of workforce management.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Work Order & Service Appointment Customization</li>
+                <li><i class="fas fa-check-circle"></i> Dispatcher Console Setup</li>
+                <li><i class="fas fa-check-circle"></i> Service Resource Management </li>
+                <li><i class="fas fa-check-circle"></i> Inventory & Asset Management</li>
+                <li><i class="fas fa-check-circle"></i> FSL Mobile App Customization </li>
+                <li><i class="fas fa-check-circle"></i> Generate Service Reports</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
                 <a href="{{ url('/field-service-lightning-implementation') }}">Know More</a>
               </div>
@@ -221,9 +264,16 @@
               </a>
             </div>
             <div class="service_style_seven_text">
-              <p>Salesforce Data Migration is a complicated and time-consuming task which involves data export, data mapping, data cleansing and data moving from any CRM, old On-premise or Cloud system to Salesforce org. Before we migrate data, first we have to migrate metadata. After Setting up new Salesforce CRM system, we will get all your existing data from your present CRM platform to your newly configured Salesforce org.</p>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Metadata Migration</li>
+                <li><i class="fas fa-check-circle"></i> Data Extraction & Mapping</li>
+                <li><i class="fas fa-check-circle"></i> Data Cleansing & Transformation</li>
+                <li><i class="fas fa-check-circle"></i> Seamless Data Migration</li>
+                <li><i class="fas fa-check-circle"></i> Validation & Quality Assurance</li>
+                <li><i class="fas fa-check-circle"></i> Post-Migration Support & Optimization</li>
+              </ul>
             </div>
-            <div class="feature_style_eight_button">
+            <div class="feature_style_eight_button mt-3">
               <div class="button style-four">
                 <a href="{{ url('/data-migration') }}">Know More</a>
               </div>

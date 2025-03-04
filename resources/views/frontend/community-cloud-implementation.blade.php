@@ -33,12 +33,14 @@
         <div class="singel_about_left">
           <div class="singel_about_left_inner mb-3">
             <div class="singel-about-content boder pl-4">
-              <p>Broadcast messages, news, updates to your customers, Partners and Employees and receive their feedback and suggestions. Using community, we can address large group of people. Using community, customers can get solutions to their issues from the knowledge base of the community using Question and answer discussion, customer support channel, agent support.</p>
-              <p>At Kitaracloud, with continuous discussion with your stackholders, we suggest Which Salesforce Community Cloud Implementation model fits within your business.</p>
+              <p>We help you build vibrant communities that foster collaboration among customers, partners, and employees. Our services include:</p>
               <ul>
-                <li>Enable Communities</li>
-                <li>Create a community</li>
-                <li>Add new members</li>
+                <li><strong>Custom Community Development –</strong> Designing and implementing that reflect your brand identity and meet specific community needs. Customize the community using LWC.</li>
+                <li><strong>Security Model Configuration –</strong> Establishing robust security settings to protect sensitive information and manage user permissions effectively.</li>
+                <li><strong>User Experience Optimization –</strong> Enhancing the community interface to provide an intuitive and seamless user experience.</li>
+                <li><strong>Integration with Salesforce Data –</strong> Connecting community platforms with your Salesforce CRM to enable real-time data sharing and collaboration.</li>
+                <li><strong>Mobile Accessibility –</strong> Ensuring that communities are fully responsive and accessible on various mobile devices.</li>
+                <li><strong>Performance Analytics –</strong> Implementing tools to monitor community engagement and gather insights for continuous improvement.</li>
               </ul>
             </div>
           </div>

@@ -163,14 +163,20 @@
       <div class="col-lg-6">
         <div class="section_title text_left">
           <div class="section_main_title">
-            <h2>Cloud Implementation Services</h2>
+            <h2>Sales Cloud Implementation</h2>
           </div>
           <div class="em_bar">
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-          <p>Our experienced Salesforce professionals follow the best practices for Sales Process Automation, Configuration, Customization, Salesforce Einstein, Systems Integration, Dashboard and Reporting. we streamline sales pipeline, making it more efficient, effective, and well-managed with Salesforce Sales Cloud so our customer can sell faster and easily.</p>
-          <p>We specialize in seamless third-party system integrations. Based on business needs, we perform real-time and scheduled integrations. We efficiently integrate Salesforce with various external systems using ETL tools, ensuring data accuracy, scalability, and process optimization.</p>
+          <ul>
+            <li><strong>Lead & Opportunity Management –</strong> Streamline the sales process by capturing, tracking, and managing leads and opportunities efficiently.</li>
+            <li><strong>Sales Automation & Workflow Customization –</strong> Automate repetitive sales tasks, approvals, and follow-ups to enhance productivity.</li>
+            <li><strong>Pipeline & Forecasting Management –</strong> Gain real-time visibility into sales pipelines and use predictive analytics for accurate forecasting.</li>
+            <li><strong>Integration with Third-Party Apps –</strong> Seamlessly connect Sales Cloud with marketing, ERP, and communication tools for a unified workflow.</li>
+            <li><strong>Customization & Scalability –</strong> Tailor Sales Cloud features such as custom fields, objects, and reports to align with business requirements.</li>
+            <li><strong>Reporting & Analytics –</strong> Utilize AI-driven insights and customizable dashboards to track sales performance and drive data-backed decisions.</li>
+          </ul>
           </div>
         </div>
       </div>
@@ -198,14 +204,20 @@
       <div class="col-lg-6">
         <div class="section_title text_left">
           <div class="section_main_title">
-            <h2>Salesforce Cloud Implementation Services</h2>
+            <h2>Service Cloud Implementation</h2>
           </div>
           <div class="em_bar">
             <div class="em_bar_bg"></div>
           </div>
           <div class="section_content_text pt-4">
-          <p>Our experienced Salesforce professionals provide best service and support experience to your customers with Salesforce Service Cloud implementation. Based on our experience we build solution to help businesses deliver prompt and more personalized support, our implementation provides businesses a good understanding of entitled customers, improves service capabilities, increase productivity, and ensures high-level customer satisfaction.</p>
-          <p>Salesforce.com’s Service Cloud Provides multiple channels for support like Web-to-Case, Live Agent, Knowledge Transfer and Community portal. Our expert team configure these channels in very efficient manner to get valuable output from it.</p>
+          <ul>
+            <li><strong>Case Management –</strong> Setup of Web-to-Case, Email-to-Case, Live Agent (Chat), social media & Phone support, Efficient case routing and prioritization for faster resolution, Integration with third-party telephony (CTI) and chatbot solutions</li>
+            <li><strong>Case Automation –</strong> Custom case workflows, SLAs, and escalation rules, AI-driven automation with Einstein Bots & Service Cloud Voice, Setup quick actions for improved agent productivity</li>
+            <li><strong>Knowledge Management & Self-Service –</strong> Configure Knowledge Base for efficient issue resolution, Build and customize Customer Community & Self-Service Portals</li>
+            <li><strong>Service Analytics & Reporting –</strong> Real-time dashboards for case tracking, agent performance, and SLA monitoring, Generate Custom reports to gain actionable insights into customer service trends</li>
+            <li><strong>Entitlement & Milestone Management –</strong> Define customer entitlements, SLAs, and service contracts, automate case escalations and milestone tracking, Improve compliance with service-level agreements</li>
+            <li><strong>Training & Post-Implementation Support –</strong> Hands-on training for agents, managers, and admins, Ongoing support for enhancements and optimizations, best practices to improve agent efficiency and customer satisfaction</li>
+          </ul>
           </div>
         </div>
       </div>
@@ -213,6 +225,107 @@
   </div>
 </div>
 <!----- End Techno About Area ----->
+
+<div class="service_area">
+  <div class="container">    
+    <div class="row align-items-center">    
+      <div class="col-lg-6">
+        <div class="section_title text_left">
+          <div class="section_main_title">
+            <h2>Marketing Cloud Implementation</h2>
+          </div>
+          <div class="em_bar">
+            <div class="em_bar_bg"></div>
+          </div>
+          <div class="section_content_text pt-4">
+          <ul>
+            <li><strong>Cross-Channel Campaign Management –</strong> Coordinating marketing efforts across email, social media, SMS, and more to ensure a unified customer experience.</li>
+            <li><strong>Data Integration –</strong> Consolidating customer data from various sources to create a comprehensive view for targeted marketing.</li>
+            <li><strong>Automation of Marketing Processes –</strong> Streamlining repetitive tasks such as email sends, social media posts, and ad placements to increase efficiency.</li>
+            <li><strong>Personalization Strategies –</strong> Utilizing customer data to deliver personalized content and offers, enhancing engagement and conversion rates.</li>
+            <li><strong>Analytics and Reporting –</strong> Implementing tools to measure campaign performance and inform data-driven marketing strategies.</li>
+            <li><strong>Integration with Sales and Service Clouds –</strong> Ensuring seamless collaboration between marketing, sales, and service teams for a cohesive customer journey.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service_single_thumb right">
+          <div>
+            <img src="{{ asset('theme') }}/assets/images/cloud-mark.jpg" alt="" class="w-100" />
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<div class="service_area bg_color2 style2 pt-50 pb-50">
+  <div class="container">    
+    <div class="row align-items-center"> 
+      <div class="col-lg-6">
+        <div class="service_single_thumb right">
+          <div>
+            <img src="{{ asset('theme') }}/assets/images/pardot-imple.png" alt="" class="w-100" />
+          </div>
+        </div>
+      </div>     
+      <div class="col-lg-6">
+        <div class="section_title text_left">
+          <div class="section_main_title">
+            <h2>Pardot Implementation</h2>
+          </div>
+          <div class="em_bar">
+            <div class="em_bar_bg"></div>
+          </div>
+          <div class="section_content_text pt-4">
+          <ul>
+            <li><strong>Lead Generation and Management –</strong> Setting up systems to capture, score, and nurture leads effectively.</li>
+            <li><strong>Email Marketing Automation –</strong> Designing and automating email campaigns to engage prospects and customers</li>
+            <li><strong>Alignment of Sales and Marketing –</strong> Facilitating collaboration between sales and marketing teams through shared insights and integrated tools</li>
+            <li><strong>ROI Tracking and Reporting –</strong> Implementing analytics to measure the effectiveness of marketing efforts and inform strategic</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----- End Techno About Area ----->
+
+<div class="service_area pt-80 pb-80">
+  <div class="container">    
+    <div class="row align-items-center">    
+      <div class="col-lg-6">
+        <div class="section_title text_left">
+          <div class="section_main_title">
+            <h2>Salesforce CPQ Implementation</h2>
+          </div>
+          <div class="em_bar">
+            <div class="em_bar_bg"></div>
+          </div>
+          <div class="section_content_text pt-4">
+          <ul>
+            <li><strong>Understand your Product Structure –</strong> In-depth assessment of your sales process and pricing structure and Strategic CPQ roadmap tailored to your business needs</li>
+            <li><strong>Product & Pricing Configuration –</strong> Configure Bundle Products, Configure Usage based products, Create Price rules and Product rules for the automation.</li>
+            <li><strong>Quote Generation –</strong> Configure QLI Editor, design customised Quote Templates, Renewals and Amendments</li>
+            <li><strong>Approval Automation –</strong> Utilize Salesforce Standard Approval process, Configure Advance Approvals</li>
+            <li><strong>Integration with third-party Systems –</strong> Connect CPQ with Order Provisioning and billing systems, like NetSuite. Automated data sync for accurate reporting and forecasting.</li>
+            <li><strong>User Training & Adoption –</strong> Hands-on workshops for CPQ administrators, Ongoing support to ensure smooth adoption and efficiency</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service_single_thumb right">
+          <div>
+            <img src="{{ asset('theme') }}/assets/images/cpq-imple.png" nofollow="Kcloud Technologies" alt="Salesforce CPQ Implementation" class="w-100" />
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
 
 <!----- Start Techno call do action Area ----->
 <div class="call-do-action pt-70 pb-80">
