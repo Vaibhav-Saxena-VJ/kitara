@@ -278,7 +278,7 @@
       <div class="col-lg-3">
         <div class="feature_style_five mb-30">
           <div class="feature_style_five_cion mb-20">
-            <img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/1st-1.png" alt="" />
+            <img src="{{ asset('theme') }}/assets/images/badge.png" alt="" />
           </div>
           <div class="feature_style_five_title mb-3">
             <h4>Certified Salesforce Experts</h4>
@@ -291,7 +291,7 @@
       <div class="col-lg-3">
         <div class="feature_style_five mb-30">
           <div class="feature_style_five_cion mb-20">
-            <img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/2nd-1.png" alt="" />
+            <img src="{{ asset('theme') }}/assets/images/call.png" alt="" />
           </div>
           <div class="feature_style_five_title mb-3">
             <h4>Flexible Support Plans</h4>
@@ -304,7 +304,7 @@
       <div class="col-lg-3">
         <div class="feature_style_five mb-30">
           <div class="feature_style_five_cion mb-20">
-            <img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/3rd-1.png" alt="" />
+            <img src="{{ asset('theme') }}/assets/images/proactive.png" alt="" />
           </div>
           <div class="feature_style_five_title mb-3">
             <h4>Proactive Approach</h4>
