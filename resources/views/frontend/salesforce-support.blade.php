@@ -56,7 +56,7 @@
       <div class="col-lg-6">
         <div class="service_single_thumb left">
           <div class="">
-            <img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/image-2-n.png" alt="" class="w-100"/>
+            <img src="{{ asset('theme') }}/assets/images/maintenance.png" alt="" class="w-100"/>
           </div>
         </div>
       </div>
@@ -118,6 +118,14 @@
 <div class="service_area bg_color2 style2 pt-50 pb-50">
   <div class="container">
     <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="service_single_thumb left">
+          <div>
+            <img src="{{ asset('theme') }}/assets/images/data-integration.png" alt="" class="w-100"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
       <div class="col-lg-6">
         <div class="section_title text_left">
           <div class="section_main_title">
@@ -137,27 +145,13 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="service_single_thumb left">
-          <div>
-            <img src="https://www.kitaracloud.com/wp-content/uploads/2022/03/Image-4.png" alt="" class="w-100"/>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
-<div class="service_area pt-80 pb-80">
+<div class="service_area">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="service_single_thumb left">
-          <div>
-            <img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/Image-5.png" alt="" class="w-100" />
-          </div>
-        </div>
-      </div>
       <div class="col-lg-6">
         <div class="section_title text_left">
           <div class="section_main_title">
@@ -175,6 +169,13 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-6">
+        <div class="service_single_thumb left">
+          <div>
+            <img src="{{ asset('theme') }}/assets/images/security-compliance.png" alt="" class="w-100" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -182,6 +183,13 @@
 <div class="service_area bg_color2 style2 pt-60 pb-60">
   <div class="container">
     <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="service_single_thumb left">
+          <div>
+            <img src="{{ asset('theme') }}/assets/images/user-adoption.png" alt="" class="w-100" />
+          </div>
+        </div>
+      </div>
       <div class="col-lg-6">
         <div class="section_title text_left">
           <div class="section_main_title">
@@ -198,13 +206,6 @@
               <li>Prepare User guide documents</li>
               <li>Partner with us for reliable, high-quality Salesforce support that drives efficiency, productivity, and business success.</li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="service_single_thumb left">
-          <div>
-            <img src="{{ asset('theme') }}/assets/images/user-adoption.png" alt="" class="w-100" />
           </div>
         </div>
       </div>
