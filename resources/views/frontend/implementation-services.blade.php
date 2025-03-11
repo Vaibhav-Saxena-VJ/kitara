@@ -183,7 +183,7 @@
       <div class="col-lg-6">
         <div class="service_single_thumb right">
           <div>
-            <img src="{{ asset('theme') }}/assets/images/cloud-imp.jpg" alt="" class="w-100" />
+            <img src="{{ asset('theme') }}/assets/images/sales-cloud.png" alt="" class="w-100" />
           </div>
         </div>
       </div> 
@@ -194,13 +194,14 @@
 <div class="service_area bg_color2 style2 pt-80 pb-80">
   <div class="container">    
     <div class="row align-items-center"> 
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         <div class="service_single_thumb right">
           <div>
-            <img src="{{ asset('theme') }}/assets/images/sf-cloud-imp.png" alt="" class="w-100" />
+            <img src="{{ asset('theme') }}/assets/images/service-cloud.png" alt="" class="w-100" />
           </div>
         </div>
       </div>     
+      <div class="col-lg-1"></div>
       <div class="col-lg-6">
         <div class="section_title text_left">
           <div class="section_main_title">
@@ -226,7 +227,7 @@
 </div>
 <!----- End Techno About Area ----->
 
-<div class="service_area">
+<div class="service_area pt-80 pb-80">
   <div class="container">    
     <div class="row align-items-center">    
       <div class="col-lg-6">
@@ -252,7 +253,7 @@
       <div class="col-lg-6">
         <div class="service_single_thumb right">
           <div>
-            <img src="{{ asset('theme') }}/assets/images/cloud-mark.jpg" alt="" class="w-100" />
+            <img src="{{ asset('theme') }}/assets/images/marketing-cloud.png" alt="" class="w-100" />
           </div>
         </div>
       </div> 
