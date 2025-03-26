@@ -148,4 +148,13 @@ class BlogController extends Controller {
     
         return redirect()->back()->with('success', 'Blog status updated successfully.');
     }
+    public function bloglist()
+    {
+        $blogs = Blog::with('category')
+            ->where('status', 'published')
+            ->orderBy('created_at', 'desc')
+            ->paginate(10);
+    
+        return view('frontend.blogs-grid', compact('blogs'));
+    }
 }

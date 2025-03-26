@@ -102,9 +102,8 @@ Route::get('/blog-detail', function () {
     return view('frontend.blog-details');
 })->name('blog.detail');;
 
-Route::get('/blog', function () {
-    return view('frontend.blogs-grid');
-})->name('blog.grid');;
+
+Route::get('/blog', [BlogController::class, 'bloglist']);
 
 //blog crud
     Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
