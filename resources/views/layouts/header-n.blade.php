@@ -64,7 +64,7 @@
                  if($role_id == env('brokerRole_id')) {
             ?>
              <li class="nav-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'dashboard' ? 'active' : '' }}">
-                <a class="nav-link" href="{{route('allLoansApplications')}}">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Loan Applications</span></a>
             </li>
@@ -142,7 +142,7 @@
                 </a>
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="{{ route('partner.profile') }}">
+                    <a class="dropdown-item" href="#">
                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-600"></i>
                         Profile
                     </a>
