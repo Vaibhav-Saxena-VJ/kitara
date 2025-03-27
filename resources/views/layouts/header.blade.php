@@ -32,6 +32,7 @@
 
         <!-- font-awesome CSS -->
         <link type="text/css" rel="stylesheet" href="{{ asset('theme') }}/assets/fonts/font-awesome/css/font-awesome.min.css"/>
+        
         <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
         
         <!-- font-flaticon CSS -->
@@ -138,7 +139,7 @@
                                 </ul>
                             </li>
                             <li><a href="{{ url('/products') }}">Products</a></li>
-                            <li><a href="https://www.kitaracloud.com/blog/">Blogs</a></li>
+                            <li><a href="{{ url('/blog') }}">Blogs</a></li>
                             <div class="donate-btn-header">
                                 <a class="dtbtn" href="{{ url('/contactus') }}">Let's Connect</a>
                             </div>

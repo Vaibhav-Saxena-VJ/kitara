@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="{{ asset('theme') }}/frontend/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('theme') }}/assets/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="{{ asset('theme') }}/frontend/css/style.css" rel="stylesheet">
+        <link href="{{ asset('theme') }}/assets/css/style.css" rel="stylesheet">
 
         <style>
             @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
@@ -198,122 +198,10 @@
         </style>
     </head>
     <body>
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light"> 
-                    <a href="{{ asset('') }}" class="navbar-brand p-0">
-                        <img src="{{ asset('theme') }}/frontend/img/logo-white.svg" alt="Logo" class="w-100">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-0 mx-lg-auto">
-                            <a href="{{ url('/') }}" class="nav-item {{ Request::is('/') ? 'active' : '' }}">HOME</a>
-                            <a href="{{ url('about') }}" class="nav-item {{ Request::is('about') ? 'active' : '' }}">ABOUT</a>
-                            <div class="nav-item dropdown">
-                                <a href="{{ url('services') }}" class="nav-link nav-item" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">SERVICES</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="{{ url('home-loan') }}" class="dropdown-item {{ Request::is('home-loan') ? 'active' : '' }}">HOME LOAN</a>
-                                    <a href="{{ url('loan-against-property')}}" class="dropdown-item {{ Request::is('loan-against-property') ? 'active' : '' }}">LOAN AGAINST PROPERTY</a>
-                                    <a href="{{ url('project-loan')}}" class="dropdown-item {{ Request::is('project-loan') ? 'active' : '' }}">PROJECT LOAN</a>
-                                    <a href="{{ url('overdraft-facility')}}" class="dropdown-item {{ Request::is('overdraft-facility') ? 'active' : '' }}">OVERDRAFT FACILITY</a>
-                                    <a href="{{ url('lease-rental-discounting')}}" class="dropdown-item {{ Request::is('lease-rental-discounting') ? 'active' : '' }}">LEASE RENTAL DISCOUNTING</a>
-                                    <a href="{{ url('msme-loan')}}" class="dropdown-item {{ Request::is('msme-loan') ? 'active' : '' }}">MSME LOAN</a>
-                                </div>
-                            </div>
-                            <a href="{{ url('properties')}}" class="nav-item {{ Request::is('properties') ? 'active' : '' }}">PROPERTIES</a>
-                            <a href="{{ url('referral-program')}}" class="nav-item {{ Request::is('referral-program') ? 'active' : '' }}">REFERRALS</a>
-                            <a href="https://jfinserv.com/blog/" class="nav-item {{ Request::is('blog') ? 'active' : '' }}">BLOGS</a>
-                            <div class="nav-btn px-3">
-                                <a href="{{ url('contact')}}" class="btn btn-primary rounded-0 py-2 px-4 ms-3 flex-shrink-0 nav-item {{ Request::is('contact') ? 'active' : '' }}">CONTACT</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar & Hero End -->    
-
-        <!-- <div class="login-page bg-light" style="background-image: url(../theme/frontend/img/bg-reg.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="bg-white shadow rounded">
-                            <div class="row">
-                                <div class="col-md-6 pe-0">
-                                    @if (session('error'))
-                                        <div class="alert alert-danger">
-                                            {{ session('error') }}
-                                        </div>
-                                    @endif
-                                    <div class="form-left h-100 py-5 px-5">
-                                        <form class="row g-4" action="{{Route('userLogin')}}" method="post">
-                                            @csrf
-                                            @if ($errors->any())
-                                                <div class="alert alert-danger">
-                                                    <ul>
-                                                        @foreach ($errors->all() as $error)
-                                                            <li>{{ $error }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            @endif
-
-                                            <div class="col-12">
-                                                <label>Username<span class="text-danger">*</span></label>
-                                                <div class="input-group">
-                                                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
-                                                    <input type="email" name="email" class="form-control" placeholder="Enter your email" value="{{ old('email') }}">
-                                                </div>
-                                                @error('email')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label>Password<span class="text-danger">*</span></label>
-                                                <div class="input-group">
-                                                    <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
-                                                    <input type="password" name="password" class="form-control" placeholder="Enter Password">
-                                                </div>
-                                                @error('password')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                                                    <label class="form-check-label" for="inlineFormCheck">Remember me</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-12">
-                                                <a href="{{route('forgot')}}" class="float-end text-primary">Forgot Password?</a>
-                                                <a href="/registration" class="text-primary">Register an Account Now!</a></p>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-danger w-50 px-3 py-2 rounded-1 uppercase">Login</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-md-6" style="background-image: url(../theme/frontend/img/user-login.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 0 10px 10px 0;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <section>
             <div class="container">
                 <div class="user signinBx">                   
-                <div class="imgBx"><img src="{{ asset('theme') }}/frontend/img/user-login.jpg" alt="" /></div>
+                <div class="imgBx"><img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/Why-Choose-Us-03-Final.png" alt="" /></div>
                     <div class="formBx">
                         @if (session('error'))
                             <div class="alert alert-danger">
@@ -340,85 +228,8 @@
                             <div class="col-12 pb-2">
                                 <button type="submit" class="btn btn-dark px-4 py-2 rounded-1 uppercase">Login</button>
                             </div>
-                            
-                            <p class="signup">Don't have an account ? <a onclick="toggleForm();" style="cursor: pointer;">Sign Up.</a></p>
                         </form>
                     </div>
-                </div>
-                <div class="user signupBx">
-                    <div class="formBx">
-                        <!-- Success and Error Messages -->
-                        @if(session('success'))
-                            <div class="alert alert-success">{{ session('success') }}</div>
-                        @endif
-                        @if(session('error'))
-                            <div class="alert alert-danger">{{ session('error') }}</div>
-                        @endif
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        <form action="{{ route('registerUser') }}" method="POST" class="row">
-                            <h2>Create an account</h2>
-                            @csrf
-                            <div class="col-12">
-                                <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Enter Your Name" required>
-                                @error('name')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="col-12">
-                                <input type="text" class="form-control @error('mobile_no') is-invalid @enderror" name="mobile_no" value="{{ old('mobile_no') }}" placeholder="Enter Your Phone" required>
-                                @error('mobile_no')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="col-12">
-                                <input type="email" class="form-control @error('email_id') is-invalid @enderror" name="email_id" value="{{ old('email_id') }}" placeholder="Enter Your Email" required>
-                                @error('email_id')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="col-12">
-                                <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="Enter Password" required>
-                                <div class="pos-ryt">
-                                    <button type="button" class="btn btn-outline-secondary toggle-password" data-target="#password">
-                                        <i class="bi bi-eye-slash"></i>
-                                    </button>
-                                </div>
-                                @error('password')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="col-12">
-                                <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror" id="password_confirmation" name="password_confirmation" placeholder="Re-type Password" required>
-                                <div class="pos-ryt">
-                                    <button type="button" class="btn btn-outline-secondary toggle-password" data-target="#password_confirmation">
-                                        <i class="bi bi-eye-slash"></i>
-                                    </button>
-                                </div>
-                                @error('password_confirmation')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="col-12 mt-2">
-                                <button class="btn btn-dark px-4 py-2 rounded-1 uppercase" type="submit">Register Now</button>
-                            </div>
-
-                            <p class="signup">Already have an account ? <a onclick="toggleForm();" style="cursor: pointer;">Sign in.</a>                            </p>
-                        </form>
-                    </div>
-                    <div class="imgBx"><img src="{{ asset('theme') }}/frontend/img/agreement.jpg" alt="" /></div>
                 </div>
             </div>
         </section>
