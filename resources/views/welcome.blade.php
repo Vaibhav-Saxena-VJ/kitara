@@ -201,7 +201,7 @@
         <section>
             <div class="container">
                 <div class="user signinBx">                   
-                <div class="imgBx"><img src="{{ asset('theme') }}/frontend/img/user-login.jpg" alt="" /></div>
+                <div class="imgBx"><img src="https://www.kitaracloud.com/wp-content/uploads/2022/02/Why-Choose-Us-03-Final.png" alt="" /></div>
                     <div class="formBx">
                         @if (session('error'))
                             <div class="alert alert-danger">
