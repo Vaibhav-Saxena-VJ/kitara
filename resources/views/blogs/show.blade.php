@@ -42,9 +42,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    
+                    </div>  
+                    @if($comments->count())
+                        <div class="comment_list mt-5">
+                            <h4>{{ $comments->count() }} Comment{{ $comments->count() > 1 ? 's' : '' }}</h4>
+                            @foreach($comments as $comment)
+                                <div class="single_comment mt-3 p-3 border rounded">
+                                    <strong>{{ $comment->name }}</strong> <small class="text-muted">{{ $comment->created_at->format('d M Y') }}</small>
+                                    <p class="mb-0">{{ $comment->message }}</p>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif                  
                     <div class="col-md-12">
                         <div class="blog_reply_coment_dtl mt-5">
                             <div class="reply_ttl">
@@ -53,8 +62,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="contact_from">
-                                        <form action="#" method="POST">
-                                            @csrf
+                                    <form action="{{ route('blogs.comment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="blog_id" value="{{ $blog->id }}">                                            @csrf
                                             <div class="row g-3">
                                                 <div class="col-lg-12 col-xl-6">
                                                     <div class="form-floating">
@@ -105,41 +115,7 @@
                             <a href="https://www.instagram.com/kitaracloud/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <!-- <div id="categories-3" class="widget widget_categories">
-                        <h2 class="widget-title">Categories</h2>
-                        <ul>
-                            <li class="cat-item cat-item-8">
-                            <a href="#/"
-                                ><i class="fa fa-youtube-play"></i> Graphic Design
-                                <span>(25)</span></a
-                            >
-                            </li>
-                            <li class="cat-item cat-item-10">
-                            <a href="#"
-                                ><i class="fa fa-youtube-play"></i> Corporate building
-                                <span>(29)</span></a
-                            >
-                            </li>
-                            <li class="cat-item cat-item-10">
-                            <a href="#"
-                                ><i class="fa fa-youtube-play"></i> Web Design
-                                <span>(29)</span></a
-                            >
-                            </li>
-                            <li class="cat-item cat-item-9">
-                            <a href="#"
-                                ><i class="fa fa-youtube-play"></i> Corporate Office
-                                <span>(15)</span></a
-                            >
-                            </li>
-                            <li class="cat-item cat-item-11">
-                            <a href="#"
-                                ><i class="fa fa-youtube-play"></i> Road Map
-                                <span>(22)</span></a
-                            >
-                            </li>
-                        </ul>
-                    </div> -->
+                    
                     <div id="em_recent_post_widget-6" class="widget widget_recent_data" >
                         <div class="single-widget-item">
                             <h2 class="widget-title"><strong>Popular Post</strong></h2>

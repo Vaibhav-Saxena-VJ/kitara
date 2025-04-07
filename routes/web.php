@@ -112,8 +112,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('categories', BlogCategoryController::class);
     Route::resource('blogs', BlogController::class);
 });
+Route::post('/blogs/comment', [BlogController::class, 'storeComment'])->name('blogs.comment');
 Route::get('/blogs/id/{id}', [BlogController::class, 'showById'])->name('blogs.showById');
 Route::patch('/admin/blogs/{id}/toggle-status', [BlogController::class, 'toggleStatus'])->name('admin.blogs.toggleStatus');
+Route::get('/admin/blog-comments', [BlogController::class, 'pendingComments'])->name('admin.blog-comments');
+Route::post('/admin/blog-comments/{id}/approve', [BlogController::class, 'approveComment'])->name('admin.blog-comments.approve');
+Route::delete('/admin/blog-comments/{id}', [BlogController::class, 'deleteComment'])->name('admin.blog-comments.delete');
 
 
 Route::post('/upload-image', [TinyMCEController::class, 'uploadImage'])->name('image.upload');
