@@ -84,6 +84,7 @@
                             <h6 class="collapse-header">Blog Management:</h6>
                             <a class="collapse-item" href="{{ route('admin.blogs.index') }}">Blogs</a>
                             <a class="collapse-item" href="{{ route('admin.blogs.create') }}">Add Blog</a>
+                            <a class="collapse-item" href="{{ route('admin.blog-comments') }}">Blog Comments</a>
                         </div>
                     </div>
                 </li>
