@@ -43,17 +43,28 @@
                             </div>
                         </div>
                     </div>  
+
                     @if($comments->count())
-                        <div class="comment_list mt-5">
-                            <h4>{{ $comments->count() }} Comment{{ $comments->count() > 1 ? 's' : '' }}</h4>
+                        <div class="blog_comments_section mt-5">
+                            <div class="comments_ttl">
+                                <h3>{{ $comments->count() }} Comment{{ $comments->count() > 1 ? 's' : '' }}</h3>
+                            </div>
                             @foreach($comments as $comment)
-                                <div class="single_comment mt-3 p-3 border rounded">
-                                    <strong>{{ $comment->name }}</strong> <small class="text-muted">{{ $comment->created_at->format('d M Y') }}</small>
-                                    <p class="mb-0">{{ $comment->message }}</p>
+                            <div class="single_comments">
+                                <div class="commentst_content">
+                                    <div class="post_meta">
+                                        <span class="badmin">{{ $comment->name }}</span>
+                                        <span class="badmin"><i class="fa fa-clock-o"></i> {{ $comment->created_at->format('d M Y') }}</span>
+                                    </div>
+
+                                    <p>{{ $comment->message }}</p>
                                 </div>
+                            </div>
                             @endforeach
                         </div>
-                    @endif                  
+                    @endif    
+
+                    
                     <div class="col-md-12">
                         <div class="blog_reply_coment_dtl mt-5">
                             <div class="reply_ttl">
@@ -62,9 +73,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="contact_from">
-                                    <form action="{{ route('blogs.comment') }}" method="POST">
-                                        @csrf
-                                        <input type="hidden" name="blog_id" value="{{ $blog->id }}">                                            @csrf
+                                        <form action="{{ route('blogs.comment') }}" method="POST">
+                                            @csrf
+                                            <input type="hidden" name="blog_id" value="{{ $blog->id }}">                                            @csrf
                                             <div class="row g-3">
                                                 <div class="col-lg-12 col-xl-6">
                                                     <div class="form-floating">

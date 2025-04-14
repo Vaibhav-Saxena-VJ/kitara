@@ -60,6 +60,7 @@ class BlogController extends Controller {
     
         return redirect()->route('admin.blogs.index')->with('success', 'Blog updated successfully.');
     }
+    
     public function showById($id) 
     {
         // Fetch the blog details
@@ -147,6 +148,7 @@ class BlogController extends Controller {
 
         return redirect()->route('admin.blogs.index')->with('success', 'Blog created.');
     }
+
     public function toggleStatus($id) {
         $blog = Blog::findOrFail($id);
         $blog->is_active = !$blog->is_active;
@@ -154,6 +156,7 @@ class BlogController extends Controller {
     
         return redirect()->back()->with('success', 'Blog status updated successfully.');
     }
+
     public function bloglist()
     {
         $blogs = Blog::with('category')
@@ -165,33 +168,33 @@ class BlogController extends Controller {
     }
 
 
-public function storeComment(Request $request)
-{
-    $request->validate([
-        'blog_id' => 'required|exists:blogs,id',
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'message' => 'required|string',
-    ]);
+    public function storeComment(Request $request)
+    {
+        $request->validate([
+            'blog_id' => 'required|exists:blogs,id',
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'message' => 'required|string',
+        ]);
 
-    BlogComment::create($request->only('blog_id', 'name', 'email', 'message'));
+        BlogComment::create($request->only('blog_id', 'name', 'email', 'message'));
 
-    return back()->with('success', 'Comment submitted successfully.');
-}
-public function pendingComments()
-{
-    $comments = BlogComment::where('is_approved', 0)->latest()->get();
-    return view('blogs.blog-comments.index', compact('comments'));
-}
+        return back()->with('success', 'Comment submitted successfully.');
+    }
+    public function pendingComments()
+    {
+        $comments = BlogComment::where('is_approved', 0)->latest()->get();
+        return view('blogs.blog-comments.index', compact('comments'));
+    }
 
-public function approveComment($id)
-{
-    BlogComment::where('id', $id)->update(['is_approved' => 1]);
-    return back()->with('success', 'Comment approved successfully.');
-}
-public function deleteComment($id)
-{
-    BlogComment::where('id', $id)->delete();
-    return back()->with('success', 'Comment deleted successfully.');
-}
+    public function approveComment($id)
+    {
+        BlogComment::where('id', $id)->update(['is_approved' => 1]);
+        return back()->with('success', 'Comment approved successfully.');
+    }
+    public function deleteComment($id)
+    {
+        BlogComment::where('id', $id)->delete();
+        return back()->with('success', 'Comment deleted successfully.');
+    }
 }
