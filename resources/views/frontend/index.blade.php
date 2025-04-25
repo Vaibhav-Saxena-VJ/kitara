@@ -799,99 +799,49 @@
       <div class="col-lg-3">
         <div class="section_button mt-50">
           <div class="button two">
-            <a href="https://www.kitaracloud.com/blog/">See All Blogs</a>
+            <a href="{{ url('/blog/') }}">See All Blogs</a>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="single_blog text-center mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
-          <div class="single_blog_thumb">
-            <a href="#"><img src="https://www.kitaracloud.com/wp-content/uploads/2022/03/Schedule-Apex-to-run-Every-24-HOUR.png" alt=""/></a>
-          </div>
-          <div class="single_blog_date">
-            <div class="single_blog_date_inner">
-              <span>12 MAR 2022</span>
+      @if(isset($blogs) && $blogs->count() > 0)
+        @foreach ($blogs as $blog)
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="single_blog mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
+              <div class="single_blog_thumb">
+                <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                  <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" />
+                </a>
+              </div>
+              <div class="single_blog_date">
+                <div class="single_blog_date_inner">
+                  <span>{{ \Carbon\Carbon::parse($blog->created_at)->format('d M Y') }}</span>
+                </div>
+              </div>
+              <div class="single_blog_content pt-4 pl-4 pr-4">
+                <div class="blog_page_title pb-1">
+                  <h3>
+                    <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                      {{ Str::limit($blog->title, 40) }}
+                    </a>
+                  </h3>
+                </div>
+                <div class="blog_description">
+                  <p>{!! Str::limit(strip_tags($blog->description), 100) !!}</p>
+                </div>
+                <div class="blog_page_button style_two pb-5">
+                  <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                    Read More <i class="fa fa-long-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="single_blog_content pt-4 pl-4 pr-4">
-            <!-- <div class="techno_blog_meta">
-              <a href="#">Techno </a>
-              <span class="meta-date pl-3">Corporate</span>
-            </div> -->
-            <div class="blog_page_title pb-1">
-              <h3>
-                <a href="#">Schedule Apex to run Every 24 HOUR</a>
-              </h3>
-            </div>
-            <div class="blog_description">
-              <p>Following is the snippet of anonymous code which will help you to schedule your apex Job to run Every HOUR.</p>
-            </div>
-            <div class="blog_page_button style_two pb-5">
-              <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="single_blog text-center mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
-          <div class="single_blog_thumb">
-            <a href="blog-details.html"><img src="https://www.kitaracloud.com/wp-content/uploads/2022/03/Oracle-to-Salesforce-Integration-A-Step-by-Step-Guide.png" alt=""/></a>
-          </div>
-          <div class="single_blog_date color2">
-            <div class="single_blog_date_inner">
-              <span>12 MAR 2022</span>
-            </div>
-          </div>
-          <div class="single_blog_content pt-4 pl-4 pr-4">
-            <!-- <div class="techno_blog_meta">
-              <a href="#">Techno </a>
-              <span class="meta-date pl-3">Business</span>
-            </div> -->
-            <div class="blog_page_title pb-1">
-              <h3>
-                <a href="#">A Step by Step Guide: Oracle-to-Salesforce Integration</a>
-              </h3>
-            </div>
-            <div class="blog_description">
-              <p>Below are the seven steps to integrate Salesforce with Oracle using Lightning Connect...</p>
-            </div>
-            <div class="blog_page_button style_two pb-5">
-              <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="single_blog text-center mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
-          <div class="single_blog_thumb">
-            <a href="#"><img src="https://www.kitaracloud.com/wp-content/uploads/2022/03/Salesforce-Integration-With-.NET-using-WSDL.png" alt=""/></a>
-          </div>
-          <div class="single_blog_date color3">
-            <div class="single_blog_date_inner">
-              <span>09 MAR 2022</span>
-            </div>
-          </div>
-          <div class="single_blog_content pt-4 pl-4 pr-4">
-            <!-- <div class="techno_blog_meta">
-              <a href="#">Techno </a>
-              <span class="meta-date pl-3">Consulting</span>
-            </div> -->
-            <div class="blog_page_title pb-1">
-              <h3>
-                <a href="#">The five devices you need to work anytime</a>
-              </h3>
-            </div>
-            <div class="blog_description">
-              <p>Below are the four steps to integrate Salesforce with .NET using WSDL. Download the WSDL file from...</p>
-            </div>
-            <div class="blog_page_button style_two pb-5">
-              <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+        @endforeach
+      @else
+        <p class="text-center">No blog posts available.</p>
+      @endif
     </div>
   </div>
 </div>

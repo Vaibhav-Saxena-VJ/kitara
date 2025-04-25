@@ -33,9 +33,7 @@ use App\Http\Controllers\TinyMCEController;
 use App\Exports\EligibilityExport;
 use Maatwebsite\Excel\Facades\Excel;
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+Route::get('/', [FrontendController::class, 'index']);
 
 Route::get('/about-us', function () {
     return view('frontend.about-us');

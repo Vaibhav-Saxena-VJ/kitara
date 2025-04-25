@@ -16,11 +16,13 @@ class BlogController extends Controller {
         $blogs = Blog::where('status', 'published')->paginate(10);
         return view('blogs.index', compact('blogs'));
     }
+
     public function edit($id) {
         $blog = Blog::findOrFail($id);
         $categories = BlogCategory::all();
         return view('blogs.edit', compact('blog', 'categories'));
     }
+    
     public function update(Request $request, $id) {
         $request->validate([
             'title' => 'required',

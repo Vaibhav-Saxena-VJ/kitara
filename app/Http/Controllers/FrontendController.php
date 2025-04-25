@@ -10,8 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\File;
 use App\Models\PasswordResets;
-
-
+use App\Models\Blog;
 
 
 class FrontendController extends Controller
@@ -411,78 +410,56 @@ class FrontendController extends Controller
     }
         
     public function search_properties(Request $request)
-{
-    $range_id = $request->range_id;
-    $category_type = $request->category_type;
-    $location_name = $request->location_name;
-    $property_type_id = $request->property_type_id; // Get from AJAX request
+    {
+        $range_id = $request->range_id;
+        $category_type = $request->category_type;
+        $location_name = $request->location_name;
+        $property_type_id = $request->property_type_id; // Get from AJAX request
 
-    // Start building the query
-    $query = DB::table('properties')
-        ->join('price_range', 'properties.price_range_id', '=', 'price_range.range_id')
-        ->join('property_category', 'properties.property_type_id', '=', 'property_category.pid')
-        ->where('properties.is_active', 1);
+        // Start building the query
+        $query = DB::table('properties')
+            ->join('price_range', 'properties.price_range_id', '=', 'price_range.range_id')
+            ->join('property_category', 'properties.property_type_id', '=', 'property_category.pid')
+            ->where('properties.is_active', 1);
 
-    // Filter by property type (Buy = 1, Commercial = 2, Rent = 3)
-    if (!empty($property_type_id)) {
-        $query->where('properties.property_type_id', $property_type_id);
+        // Filter by property type (Buy = 1, Commercial = 2, Rent = 3)
+        if (!empty($property_type_id)) {
+            $query->where('properties.property_type_id', $property_type_id);
+        }
+
+        // Apply additional filters if selected
+        if (!empty($category_type)) {
+            $query->where('properties.property_type_id', $category_type);
+        }
+
+        if (!empty($range_id)) {
+            $query->where('properties.price_range_id', $range_id);
+        }
+
+        if (!empty($location_name)) {
+            $query->where('properties.localities', 'LIKE', "%{$location_name}%");
+        }
+
+        // Select the required columns
+        $data['allProperties'] = $query->select(
+            'properties.properties_id', 'properties.title', 'properties.image',
+            'properties.property_type_id', 'properties.builder_name', 'properties.select_bhk',
+            'properties.address', 'properties.facilities', 'properties.contact',
+            'price_range.from_price', 'price_range.to_price', 'property_category.category_name',
+            'properties.property_details'
+        )->paginate(700);
+
+        // Get category & price range data for filters
+        $data['category'] = DB::table('property_category')->get();
+        $data['range'] = DB::table('price_range')->get();
+
+        // Return the results dynamically for AJAX
+        return view('frontend.searchResult', compact('data'))->render();
     }
 
-    // Apply additional filters if selected
-    if (!empty($category_type)) {
-        $query->where('properties.property_type_id', $category_type);
-    }
-
-    if (!empty($range_id)) {
-        $query->where('properties.price_range_id', $range_id);
-    }
-
-    if (!empty($location_name)) {
-        $query->where('properties.localities', 'LIKE', "%{$location_name}%");
-    }
-
-    // Select the required columns
-    $data['allProperties'] = $query->select(
-        'properties.properties_id', 'properties.title', 'properties.image',
-        'properties.property_type_id', 'properties.builder_name', 'properties.select_bhk',
-        'properties.address', 'properties.facilities', 'properties.contact',
-        'price_range.from_price', 'price_range.to_price', 'property_category.category_name',
-        'properties.property_details'
-    )->paginate(700);
-
-    // Get category & price range data for filters
-    $data['category'] = DB::table('property_category')->get();
-    $data['range'] = DB::table('price_range')->get();
-
-    // Return the results dynamically for AJAX
-    return view('frontend.searchResult', compact('data'))->render();
-}
-
-    public function ReferralsView(){
-        return view('frontend.referrals');
-    }
-
-    public function HomeLoanView(){
-        return view('frontend.allLoans.home');
-    }
-
-    public function LAPLoanView(){
-        return view('frontend.allLoans.loan-against-property');
-    }
-
-    public function ProjectLoanView(){
-        return view('frontend.allLoans.project');
-    }
-
-    public function OverdraftLoanView(){
-        return view('frontend.allLoans.overdraft-facility');
-    }
-
-    public function LRDLoanView(){
-        return view('frontend.allLoans.lrd');
-    }
-    
-    public function MSMELoanView(){
-        return view('frontend.allLoans.msme');
+    public function index()
+    {
+        $blogs = Blog::where('status', 'published')->latest()->take(3)->get(); // fetch latest 3 blogs
+        return view('frontend.index', compact('blogs'));
     }
 }
