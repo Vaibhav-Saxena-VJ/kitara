@@ -33,9 +33,7 @@ use App\Http\Controllers\TinyMCEController;
 use App\Exports\EligibilityExport;
 use Maatwebsite\Excel\Facades\Excel;
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+Route::get('/', [FrontendController::class, 'index']);
 
 Route::get('/about-us', function () {
     return view('frontend.about-us');
@@ -106,12 +104,13 @@ Route::get('/blog-detail', function () {
 Route::get('/blog', [BlogController::class, 'bloglist']);
 
 //blog crud
-    Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('categories', BlogCategoryController::class);
     Route::resource('blogs', BlogController::class);
 });
+
 Route::post('/blogs/comment', [BlogController::class, 'storeComment'])->name('blogs.comment');
 Route::get('/blogs/id/{id}', [BlogController::class, 'showById'])->name('blogs.showById');
 Route::patch('/admin/blogs/{id}/toggle-status', [BlogController::class, 'toggleStatus'])->name('admin.blogs.toggleStatus');

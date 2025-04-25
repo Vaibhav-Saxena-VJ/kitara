@@ -64,8 +64,8 @@
             </div>
           </div>
         @endforeach
-      @else
-        <p class="text-center">No blog posts available.</p>
+        @else
+          <p class="text-center">No blog posts available.</p>
       @endif
     </div>
   </div>

@@ -41,7 +41,7 @@
                             <li><a href="{{ url('/about-us') }}">About Us</a></li>
                             <li><a href="{{ url('/services') }}">Services</a></li>
                             <li><a href="{{ url('/products') }}">Products</a></li>
-                            <li><a href="https://www.kitaracloud.com/blog/">Blogs</a></li>
+                            <li><a href="{{ url('/blog') }}">Blogs</a></li>
                             <li><a href="{{ url('/contactus') }}">Contact</a></li>
                         </ul>
                     </div> 
