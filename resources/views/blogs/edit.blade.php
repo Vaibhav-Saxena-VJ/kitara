@@ -96,6 +96,11 @@ Edit Blog
                     </div>
 
                     <div class="mb-3">
+                        <label>Slug URL</label>
+                        <input type="text" class="form-control" name="slug" id="slug" required maxlength="100" value="{{ $blog->slug }}">
+                    </div>
+
+                    <div class="mb-3">
                         <label>Meta Title</label>
                         <input type="text" name="meta_title" class="form-control" value="{{ $blog->meta_title }}">
                     </div>

@@ -36,7 +36,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="single_blog mb-4">
               <div class="single_blog_thumb pb-4">
-                <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">
                   <img src="{{ asset('storage/' . $blog->image) }}" class="blogs-image" alt="{{ $blog->title }}">
                 </a>
               </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="blog_page_title pb-1">
                   <h3>
-                    <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                    <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">
                       {{ Str::limit($blog->title, 40) }}
                     </a>
                   </h3>
@@ -56,7 +56,7 @@
                   <p class="mb-3">{!! Str::limit(strip_tags($blog->description), 100) !!}</p>
                 </div>
                 <div class="blog_page_button pb-4">
-                  <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}" class="btn p-0">
+                  <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}" class="btn p-0">
                     Read More <i class="fa fa-arrow-right"></i>
                   </a>
                 </div>                

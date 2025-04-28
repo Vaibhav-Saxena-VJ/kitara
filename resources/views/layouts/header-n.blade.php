@@ -34,15 +34,15 @@
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('dashboard')}}">
+            <a class="sidebar-brand d-flex align-items-center" href="{{route('dashboard')}}">
                 <div class="sidebar-brand-icon">
                     {{-- <i class="fas fa-laugh-wink"></i> --}}
-                    <img width="100%" height="50px" src="{{ asset('theme/frontend/img/logo-white.svg') }}">
+                    <img width="100%" height="50px" src="{{ asset('theme') }}/assets/images/logo-w.png" alt="Logo White">
                 </div>
                 <!-- <div class="sidebar-brand-text mx-3">{{ Session::get('username')}}</div> -->
             </a>
 
-            <?php
+            <!-- <?php
             $role_id = session()->get('role_id');
             if ($role_id == 4) {
             ?>
@@ -54,22 +54,10 @@
                 </li>
             <?php 
             }
-            ?>
+            ?> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-
-            <?php
-                 $role_id = session()->get('role_id');
-                 if($role_id == env('brokerRole_id')) {
-            ?>
-             <li class="nav-item {{ Request::segment(1) == 'admin' && Request::segment(2) == 'dashboard' ? 'active' : '' }}">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Loan Applications</span></a>
-            </li>
-          
-            <?php } ?> 
               
         <?php    if($role_id == 4) { ?>
            <!-- Nav Item - Pages Collapse Menu -->

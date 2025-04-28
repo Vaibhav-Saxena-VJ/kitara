@@ -19,7 +19,7 @@
                             </div>
                             <div class="col-md-5 w-30s">
                                 <a href="https://www.forcetalks.com/kitaracloud/" target="_blank">
-                                    <img src="https://www.kitaracloud.com/wp-content/uploads/2020/09/forcetalksalesforce.png" class="w-100" alt="">
+                                    <img src="https://www.kitaracloud.com/WP/wp-content/uploads/2020/09/forcetalksalesforce.png" class="w-100" alt="">
                                 </a>
                             </div>
                             <div class="col-md-10 bg-white rounded ptb-2 w-70s">
