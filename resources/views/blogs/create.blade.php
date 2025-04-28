@@ -89,6 +89,11 @@ Create New Blog
                     </div>
 
                     <div class="mb-3">
+                        <label>Slug URL</label>
+                        <input type="text" class="form-control" name="slug" id="slug" placeholder="Enter Slug" required maxlength="100">
+                    </div>
+
+                    <div class="mb-3">
                         <label>Meta Title</label>
                         <input type="text" name="meta_title" class="form-control" value="{{ old('meta_title') }}">
                     </div>

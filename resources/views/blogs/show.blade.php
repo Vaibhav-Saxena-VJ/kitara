@@ -1,7 +1,7 @@
 @extends('layouts.header')
-@section('title', "Blog Details Page - Jfinserv")
-@section('description', "")
-@section('keywords', "")
+@section('title', $meta_title)
+@section('description', $meta_description)
+@section('keywords', $meta_keywords)
 
 @section('content')
 <!-- BLOG AREA -->
@@ -139,7 +139,7 @@
                                     </div>
                                     <div class="recent-post-text">
                                         <h4>
-                                            <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">{{ $featuredBlog->title }}</a>
+                                            <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">{{ $featuredBlog->title }}</a>
                                         </h4>
                                         <span class="rcomment">{{ $featuredBlog->created_at->format('F d, Y') }}</span>
                                     </div>

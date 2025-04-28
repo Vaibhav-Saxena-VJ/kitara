@@ -23,199 +23,201 @@ class AdminController extends Controller
     }
 
     public function dashboard()
-{
-    if (!empty(Session::get('role_id'))) {
-        $totalLoans = DB::table('loans')->count();
-        $inProcessLoans = DB::table('loans')->where('status', 'in process')->count();
-        $approvedLoans = DB::table('loans')->where('status', 'approved')->count();
-        $disbursedLoans = DB::table('loans')->where('status', 'disbursed')->count();
-        $rejectedLoans = DB::table('loans')->where('status', 'rejected')->count();
-        $totalUsers = DB::table('users')->count();
-		$totalCustomers = DB::table('users')->where('role_id', 1)->count();
-		$totalOfficers = DB::table('users')->where('role_id', 2)->count();
-		$leads = DB::table('leads')->count();
-		$enquiries = DB::table('enquiries')->count();
-		$properties = DB::table('properties')->count();
-        $recentLoans = $this->fetchRecentLoans();
+	{
+		if (!empty(Session::get('role_id'))) {
+			$totalLoans = DB::table('loans')->count();
+			$inProcessLoans = DB::table('loans')->where('status', 'in process')->count();
+			$approvedLoans = DB::table('loans')->where('status', 'approved')->count();
+			$disbursedLoans = DB::table('loans')->where('status', 'disbursed')->count();
+			$rejectedLoans = DB::table('loans')->where('status', 'rejected')->count();
+			$totalUsers = DB::table('users')->count();
+			$totalCustomers = DB::table('users')->where('role_id', 1)->count();
+			$totalOfficers = DB::table('users')->where('role_id', 2)->count();
+			$leads = DB::table('leads')->count();
+			$enquiries = DB::table('enquiries')->count();
+			$properties = DB::table('properties')->count();
+			$recentLoans = $this->fetchRecentLoans();
 
-        // Fetch monthly data for disbursed loans
-        $monthlyDisbursedData = DB::table('loans')
-            ->select(
-                DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
-                DB::raw("COUNT(*) as total_loans"),
-                DB::raw("SUM(amount) as total_amount")
-            )
-            ->where('status', 'disbursed')
-            ->groupBy('month')
-            ->orderBy('month', 'ASC')
-            ->get();
+			// Fetch monthly data for disbursed loans
+			$monthlyDisbursedData = DB::table('loans')
+				->select(
+					DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
+					DB::raw("COUNT(*) as total_loans"),
+					DB::raw("SUM(amount) as total_amount")
+				)
+				->where('status', 'disbursed')
+				->groupBy('month')
+				->orderBy('month', 'ASC')
+				->get();
 
-        $loanStatuses = [
-            'In Process' => $inProcessLoans,
-            'Approved' => $approvedLoans,
-            'Disbursed' => $disbursedLoans,
-            'Rejected' => $rejectedLoans,
-        ];
+			$loanStatuses = [
+				'In Process' => $inProcessLoans,
+				'Approved' => $approvedLoans,
+				'Disbursed' => $disbursedLoans,
+				'Rejected' => $rejectedLoans,
+			];
 
-        return view('admin.dashboard-dark', compact(
-            'totalLoans',
-            'approvedLoans',
-            'rejectedLoans',
-            'loanStatuses',
-            'totalUsers',
-            'disbursedLoans',
-            'recentLoans',
-            'monthlyDisbursedData',
-			'totalCustomers',
-			'totalOfficers',
-			'leads',
-			'enquiries',
-			'properties'
-        ));
-    } else {
-        return redirect('/');
-    }
-}
-public function fetchRecentLoans($limit = 5)
-{
-    $recentLoans = DB::table('loans')
-        ->join('users', 'loans.user_id', '=', 'users.id')
-        ->join('loan_category', 'loans.loan_category_id', '=', 'loan_category.loan_category_id')
-        ->select(
-            'loans.loan_reference_id',
-            'loans.amount',
-            'users.name as user_name',
-            'loan_category.category_name as loan_category_name',
-            'loans.status'
-        )
-        ->whereNotNull('loans.loan_reference_id') // Only fetch loans where loan_reference_id is not null
-        ->latest('loans.created_at')
-        ->take($limit)
-        ->get();
+			return view('admin.dashboard-dark', compact(
+				'totalLoans',
+				'approvedLoans',
+				'rejectedLoans',
+				'loanStatuses',
+				'totalUsers',
+				'disbursedLoans',
+				'recentLoans',
+				'monthlyDisbursedData',
+				'totalCustomers',
+				'totalOfficers',
+				'leads',
+				'enquiries',
+				'properties'
+			));
+		} else {
+			return redirect('/');
+		}
+	}
+	
+	public function fetchRecentLoans($limit = 5)
+	{
+		$recentLoans = DB::table('loans')
+			->join('users', 'loans.user_id', '=', 'users.id')
+			->join('loan_category', 'loans.loan_category_id', '=', 'loan_category.loan_category_id')
+			->select(
+				'loans.loan_reference_id',
+				'loans.amount',
+				'users.name as user_name',
+				'loan_category.category_name as loan_category_name',
+				'loans.status'
+			)
+			->whereNotNull('loans.loan_reference_id') // Only fetch loans where loan_reference_id is not null
+			->latest('loans.created_at')
+			->take($limit)
+			->get();
 
-    return $recentLoans;
-}
+		return $recentLoans;
+	}
+	
 	public function adminDashboard()
-    {
-        if (!empty(Session::get('role_id'))) {
-            return view('admindash.dashboard');
-			
-        }else{
-            return redirect('/');
-        }
-    }
+	{
+		if (!empty(Session::get('role_id'))) {
+			return view('admindash.dashboard');			
+		}else{
+			return redirect('/');
+		}
+	}
 
 	public function allUserN()
-    {
-        if (!empty(Session::get('role_id'))) {
-            return view('admindash.allUsers');
-			
-        }else{
-            return redirect('/');
-        }
-    }
+	{
+		if (!empty(Session::get('role_id'))) {
+			return view('admindash.allUsers');
+				
+		}else{
+			return redirect('/');
+		}
+	}
 
-    public function activities()
-    {
-            $data['allActivies'] = DB::table('activity_logs')
-        ->join('users', 'users.id', '=', 'activity_logs.user_id')
-        ->select('activity_logs.id','users.name', 'activity_logs.activity_details')
-        ->paginate(200);
+	public function activities()
+	{
+		$data['allActivies'] = DB::table('activity_logs')
+		->join('users', 'users.id', '=', 'activity_logs.user_id')
+		->select('activity_logs.id','users.name', 'activity_logs.activity_details')
+		->paginate(200);
 
-        return view('admin.activityLogs',compact('data'));
-    }
-    //MIS
-    public function adminMis()
-    {
-        $data['loans'] = DB::table('loans')
-        ->join('users', 'loans.user_id', '=', 'users.id')
-        ->join('loan_category', 'loans.loan_category_id', '=', 'loan_category.loan_category_id')
+		return view('admin.activityLogs',compact('data'));
+	}
+	
+	//MIS
+	public function adminMis()
+	{
+		$data['loans'] = DB::table('loans')
+		->join('users', 'loans.user_id', '=', 'users.id')
+		->join('loan_category', 'loans.loan_category_id', '=', 'loan_category.loan_category_id')
 		->leftJoin('loan_bank_details', 'loans.bank_id', '=', 'loan_bank_details.bank_id')
-        ->join('profile', 'users.id', '=', 'profile.user_id')
-        ->select(
-            'loans.loan_id',
-            'loans.amount',
-            'loans.tenure',
-            'loans.loan_reference_id',
-            'users.name as user_name',
-            'users.email_id as email',
-            'profile.mobile_no',
-            'profile.city',
+		->join('profile', 'users.id', '=', 'profile.user_id')
+		->select(
+			'loans.loan_id',
+			'loans.amount',
+			'loans.tenure',
+			'loans.loan_reference_id',
+			'users.name as user_name',
+			'users.email_id as email',
+			'profile.mobile_no',
+			'profile.city',
 			'loan_bank_details.bank_name as bank_name',
-            'loan_category.category_name as loan_category_name',
-            'loans.agent_action'
-        )
-        ->paginate(10); // Adjust the pagination limit if necessary
+			'loan_category.category_name as loan_category_name',
+			'loans.agent_action'
+		)
+		->paginate(10); // Adjust the pagination limit if necessary
+		return view('frontend.admin-mis', compact('data'));
+	}
 
-    return view('frontend.admin-mis', compact('data'));
-    
-    }
-    public function viewMis($id)
-{
-    // Fetch loan details along with related user and category information
-    $loan = DB::selectOne(
-        'SELECT l.*, u.name AS user_name, lc.category_name AS loan_category_name
-         FROM loans AS l
-         JOIN users AS u ON l.user_id = u.id
-         JOIN loan_category AS lc ON l.loan_category_id = lc.loan_category_id
-         WHERE l.loan_id = ?',
-        [$id]
-    );
+	public function viewMis($id)
+	{
+		// Fetch loan details along with related user and category information
+		$loan = DB::selectOne(
+			'SELECT l.*, u.name AS user_name, lc.category_name AS loan_category_name
+			FROM loans AS l
+			JOIN users AS u ON l.user_id = u.id
+			JOIN loan_category AS lc ON l.loan_category_id = lc.loan_category_id
+			WHERE l.loan_id = ?',
+			[$id]
+		);
 
-    if (!$loan) {
-        return redirect()->route('loans.index')->with('error', 'Loan not found');
-    }
+		if (!$loan) {
+			return redirect()->route('loans.index')->with('error', 'Loan not found');
+		}
 
-    // Fetch related profile details
-    $profile = DB::selectOne(
-        'SELECT * FROM profile WHERE user_id = ?',
-        [$loan->user_id]
-    );
+		// Fetch related profile details
+		$profile = DB::selectOne(
+			'SELECT * FROM profile WHERE user_id = ?',
+			[$loan->user_id]
+		);
 
-    // Fetch related professional details
-    $professional = DB::selectOne(
-        'SELECT * FROM professional_details WHERE user_id = ?',
-        [$loan->user_id]
-    );
+		// Fetch related professional details
+		$professional = DB::selectOne(
+			'SELECT * FROM professional_details WHERE user_id = ?',
+			[$loan->user_id]
+		);
 
-    // Fetch related educational details
-    $education = DB::selectOne(
-        'SELECT * FROM education_details WHERE user_id = ?',
-        [$loan->user_id]
-    );
-    //Fetch related document
-    $documents = DB::select(
-        'SELECT * FROM documents WHERE user_id = ?',
-        [$loan->user_id]
-    );
+		// Fetch related educational details
+		$education = DB::selectOne(
+			'SELECT * FROM education_details WHERE user_id = ?',
+			[$loan->user_id]
+		);
+		//Fetch related document
+		$documents = DB::select(
+			'SELECT * FROM documents WHERE user_id = ?',
+			[$loan->user_id]
+		);
 
-    // Pass all data to the view
-    return view('frontend.loan-details', [
-        'loan' => $loan,
-        'profile' => $profile,
-        'professional' => $professional,
-        'education' => $education,
-        'documents' => $documents,
-        'sanctionLetter' => $loan->sanction_letter,
-    ]);
-}
-public function getSanctionCalculator(){
-    return view('admin.calculator.emi-calculator');
-}
-public function getEditSanctionCalculator(Request $request){
-      
-	$id=$request->id;
+		// Pass all data to the view
+		return view('frontend.loan-details', [
+			'loan' => $loan,
+			'profile' => $profile,
+			'professional' => $professional,
+			'education' => $education,
+			'documents' => $documents,
+			'sanctionLetter' => $loan->sanction_letter,
+		]);
+	}
 
-	$sanction=SanctionCalculator::find($id);
+	public function getSanctionCalculator(){
+		return view('admin.calculator.emi-calculator');
+	}
 
-	  return view('admin.calculator.editsanction')->with('sanction',$sanction);
-  }
-public function postAddSanctionCalculator(Request $request)
+	public function getEditSanctionCalculator(Request $request){
+		
+		$id=$request->id;
+
+		$sanction=SanctionCalculator::find($id);
+
+		return view('admin.calculator.editsanction')->with('sanction',$sanction);
+	}
+	public function postAddSanctionCalculator(Request $request)
 	{	
 
 		// dd($request->all());
-	
-    $sanction=new SanctionCalculator();
+    	$sanction=new SanctionCalculator();
 		$sanction->profession_type=$request->profession_type;
 		$sanction->name=$request->name;	
 		$sanction->dob=$request->dob;	

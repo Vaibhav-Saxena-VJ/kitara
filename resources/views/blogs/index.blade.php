@@ -12,7 +12,7 @@ All Blogs
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="d-flex align-items-center">
             <ol class="breadcrumb m-0 bg-transparent">
-                <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                <li class="breadcrumb-item">Dashboard</li>
                 <li class="breadcrumb-item active" aria-current="page">All Blogs</li>
             </ol>
         </nav>
