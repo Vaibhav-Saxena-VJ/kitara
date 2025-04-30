@@ -33,7 +33,7 @@ class ContactController extends Controller
     private function sendEmail($data)
     {
         // Specify the API key
-        $apiKey = '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'; 
+        $apiKey = ''; 
         
         // Use Guzzle to send the email to both the user and admin
         $client = new Client();
