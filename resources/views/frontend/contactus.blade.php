@@ -60,29 +60,29 @@
             <div class="contact_title pb-4">
               <h3>Get in Touch</h3>
             </div>
-            <form id="contact_form" action="#" method="POST" id="dreamit-form">
+            <form id="contactForm">
+              @csrf
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="form_box mb-30">
-                    <input type="text" name="name" placeholder="Name" />
+                  <div class="col-lg-12">
+                      <div class="form_box mb-30">
+                          <input type="text" name="name" id="name" placeholder="Name" required />
+                      </div>
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form_box mb-30">
-                    <input type="email" name="email" placeholder="Email Address"/>
+                  <div class="col-lg-12">
+                      <div class="form_box mb-30">
+                          <input type="email" name="email" id="email" placeholder="Email Address" required />
+                      </div>
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form_box mb-30">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                  <div class="col-lg-12">
+                      <div class="form_box mb-30">
+                          <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message" required></textarea>
+                      </div>
+                      <div class="quote_btn">
+                          <button class="btn" type="submit">Send Message</button>
+                      </div>
                   </div>
-                  <div class="quote_btn">
-                    <button class="btn" type="submit">Send Message</button>
-                  </div>
-                </div>
               </div>
-            </form>
-            <div class="status"></div>
+          </form>
           </div>
         </div>
       </div>
@@ -92,5 +92,49 @@
 <!----- End Techno Contact Area ----->
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d469953.5029537218!2d72.6781!3d23.041693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e870783fa4169%3A0x254f8f5c2f0a375f!2sKitaracloud%20Techlabs!5e0!3m2!1sen!2sus!4v1737547315036!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  $(document).ready(function () {
+      $('#contactForm').on('submit', function (e) {
+          e.preventDefault();
+          console.log("Form submit intercepted");
+
+          const formData = {
+              name: $('#name').val(),
+              email: $('#email').val(),
+              message: $('#message').val(),
+          };
+
+          $.ajax({
+            type: "POST",
+            url: "{{ route('contact.submit') }}",
+            data: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                message: $('#message').val(),
+                _token: $('input[name="_token"]').val(), // Include CSRF token
+            },
+            success: function (response) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Thank you!',
+                    text: response.message,
+                });
+                $('#contactForm')[0].reset();
+            },
+            error: function (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops!',
+                    text: error.responseJSON?.message || 'Something went wrong.',
+                });
+            }
+        });
+      });
+  });
+</script>
 
 @endsection

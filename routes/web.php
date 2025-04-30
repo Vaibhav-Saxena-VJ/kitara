@@ -12,6 +12,7 @@ use App\Http\Controllers\BankController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\TinyMCEController;
+use App\Http\Controllers\ContactController;
 // use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontendController::class, 'index']);
@@ -27,6 +28,8 @@ Route::get('/services', function () {
 Route::get('/contactus', function () {
     return view('frontend.contactus');
 });
+
+Route::post('/contact', [ContactController::class, 'handleContactForm'])->name('contact.submit');
 
 Route::get('/salesforce-development', function () {
     return view('frontend.salesforce-development');
