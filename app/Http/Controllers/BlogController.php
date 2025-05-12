@@ -230,7 +230,6 @@ class BlogController extends Controller {
         return view('frontend.blogs-grid', compact('blogs'));
     }
 
-
     public function storeComment(Request $request)
     {
         $request->validate([
@@ -244,6 +243,7 @@ class BlogController extends Controller {
 
         return back()->with('success', 'Comment submitted successfully.');
     }
+
     public function pendingComments()
     {
         $comments = BlogComment::where('is_approved', 0)->latest()->get();
@@ -255,9 +255,24 @@ class BlogController extends Controller {
         BlogComment::where('id', $id)->update(['is_approved' => 1]);
         return back()->with('success', 'Comment approved successfully.');
     }
+
     public function deleteComment($id)
     {
         BlogComment::where('id', $id)->delete();
         return back()->with('success', 'Comment deleted successfully.');
+    }
+
+    public function destroy($id)
+    {
+        $blog = Blog::findOrFail($id);
+
+        // Delete the image file from storage if it exists
+        if ($blog->image && \Storage::disk('public')->exists($blog->image)) {
+            \Storage::disk('public')->delete($blog->image);
+        }
+
+        $blog->delete();
+
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog deleted successfully.');
     }
 }

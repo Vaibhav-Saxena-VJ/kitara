@@ -33,7 +33,7 @@ class ContactController extends Controller
     private function sendEmail($data)
     {
         // Specify the API key
-        $apiKey = ; 
+        $apiKey = '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'; 
         
         // Use Guzzle to send the email to both the user and admin
         $client = new Client();
@@ -63,10 +63,7 @@ class ContactController extends Controller
             ],
             'json' => [
                 'sender' => ['email' => 'hitesh.patel@kitaracloud.com', 'name' => 'Kitaracloud Techlabs'], // Admin's sender email
-                'to' => [['email' => 'vaibhav@jfstechnologies.com', 'name' => 'Sales Head']],
-                'cc' => [
-                            ['email' => 'hiteshpatel_90@yahoo.com', 'name' => 'Owner']
-                        ],
+                'to' => [['email' => 'info@kitaracloud.com', 'name' => 'Sales Head']],
                 'subject' => "Website Contact Form Submission",
                 'htmlContent' => "
                     <h2>New Contact Form Submission</h2>
