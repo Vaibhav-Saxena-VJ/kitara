@@ -85,7 +85,7 @@ Create New Blog
                 <div class="col-md-4 py-4 px-4 bg-light">
                     <div class="mb-3">
                         <label>Blog Image</label>
-                        <input type="file" name="image" class="form-control">
+                        <input type="file" name="image" class="form-control" placeholder="Upload Banner Image">
                     </div>
 
                     <div class="mb-3">

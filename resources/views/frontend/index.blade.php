@@ -810,8 +810,8 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="single_blog mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
               <div class="single_blog_thumb">
-                <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
-                  <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" />
+                <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">
+                  <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}">
                 </a>
               </div>
               <div class="single_blog_date">
@@ -822,7 +822,7 @@
               <div class="single_blog_content pt-4 pl-4 pr-4">
                 <div class="blog_page_title pb-1">
                   <h3>
-                    <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                    <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">
                       {{ Str::limit($blog->title, 40) }}
                     </a>
                   </h3>
@@ -831,7 +831,7 @@
                   <p>{!! Str::limit(strip_tags($blog->description), 100) !!}</p>
                 </div>
                 <div class="blog_page_button style_two pb-5">
-                  <a href="{{ route('blogs.showById', ['id' => $blog->id]) }}">
+                  <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">
                     Read More <i class="fa fa-long-arrow-right"></i>
                   </a>
                 </div>
