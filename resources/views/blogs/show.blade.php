@@ -13,7 +13,7 @@
                     <div class="col-md-12">
                         <div class="blog_details">
                             <div class="blog_dtl_thumb">
-                                <img src="{{ asset('storage/' . $blog->image) }}" class="img-fluid rounded w-100" alt="{{ $blog->title }}">
+                                <img src="{{ asset($blog->image) }}" class="img-fluid rounded w-100" alt="{{ $blog->title }}">
                             </div>
                             
                             <div class="blog_dtl_content">
@@ -130,21 +130,22 @@
                     <div id="em_recent_post_widget-6" class="widget widget_recent_data" >
                         <div class="single-widget-item">
                             <h2 class="widget-title"><strong>Popular Post</strong></h2>
-                            <div class="recent-post-item">
-                                @foreach($featuredBlogs as $featuredBlog)
+                            @foreach($featuredBlogs as $featuredBlog)
+                                <div class="recent-post-item">
                                     <div class="recent-post-image">
-                                        <a href="#">
-                                            <img width="80" height="80" src="{{ asset('storage/' . $blog->image) }}" class="trendy-blog" alt="{{ $blog->title }}">
+                                        <a href="{{ route('blogs.show', ['slug' => $featuredBlog->slug]) }}">
+                                            <img width="80" height="80" src="{{ asset($featuredBlog->image) }}" class="trendy-blog" alt="{{ $featuredBlog->title }}">
                                         </a>
                                     </div>
                                     <div class="recent-post-text">
                                         <h4>
-                                            <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">{{ $featuredBlog->title }}</a>
+                                            <a href="{{ route('blogs.show', ['slug' => $featuredBlog->slug]) }}">
+                                            {{ Str::limit($featuredBlog->title, 40, '...') }}</a>
                                         </h4>
                                         <span class="rcomment">{{ $featuredBlog->created_at->format('F d, Y') }}</span>
                                     </div>
-                                @endforeach
-                            </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                     <div id="tags" class="widget thumb_left">

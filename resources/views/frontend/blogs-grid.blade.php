@@ -37,7 +37,7 @@
             <div class="single_blog mb-4">
               <div class="single_blog_thumb pb-4">
                 <a href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">
-                  <img src="{{ asset('storage/' . $blog->image) }}" class="blogs-image" alt="{{ $blog->title }}">
+                  <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}">
                 </a>
               </div>
               <div class="single_blog_content pl-4 pr-4">
