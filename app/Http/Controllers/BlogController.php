@@ -135,8 +135,7 @@ class BlogController extends Controller
         return redirect()->route('admin.blogs.index')->with('success', 'Blog deleted successfully.');
     }
 
-    public function show($slug)
-    {
+    public function show($slug){
         $blog = Blog::join('blog_categories', 'blogs.category_id', '=', 'blog_categories.id')
             ->where('blogs.slug', $slug)
             ->select('blogs.*', 'blog_categories.name as category_name')
@@ -197,10 +196,10 @@ class BlogController extends Controller
         return redirect()->back()->with('success', 'Blog status updated successfully.');
     }
 
-    public function bloglist()
-    {
+    public function bloglist(){
         $blogs = Blog::with('category')
             ->where('status', 'published')
+            ->where('is_active', 1)
             ->orderBy('created_at', 'desc')
             ->paginate(10);
 
