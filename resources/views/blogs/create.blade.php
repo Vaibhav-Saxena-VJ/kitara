@@ -126,11 +126,6 @@ Create New Blog
             height: 400,
             menubar: true,
             branding: false,
-            paste_data_images: false, // Prevent pasting base64 images
-            paste_webkit_styles: "none",
-            paste_remove_styles: true,
-            paste_remove_spans: true,
-            paste_as_text: true, // strips all formatting
 
             images_upload_url: '/upload-image',
             automatic_uploads: false,

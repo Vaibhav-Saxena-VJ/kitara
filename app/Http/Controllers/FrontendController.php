@@ -457,9 +457,14 @@ class FrontendController extends Controller
         return view('frontend.searchResult', compact('data'))->render();
     }
 
-    public function index()
-    {
-        $blogs = Blog::where('status', 'published')->latest()->take(3)->get(); // fetch latest 3 blogs
+    public function index(){
+        $blogs = Blog::with('category') // optional: if you need category details
+            ->where('status', 'published')
+            ->where('is_active', 1) // filter for active blogs
+            ->latest()
+            ->take(3)
+            ->get();
+
         return view('frontend.index', compact('blogs'));
     }
 }
